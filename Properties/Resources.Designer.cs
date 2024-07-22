@@ -63,6 +63,26 @@ namespace AgroServicios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_645_000__House_Stock_Illustrations__Royalty_Free_Vector_Graphics___Clip_Art {
+            get {
+                object obj = ResourceManager.GetObject("1,645,000+ House Stock Illustrations, Royalty-Free Vector Graphics & Clip Art", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _98_iconos_gratis_del_Miscellaneous_elements_diseñados_por_Freepik {
+            get {
+                object obj = ResourceManager.GetObject("98 iconos gratis del Miscellaneous elements diseñados por Freepik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap actualizar {
             get {
                 object obj = ResourceManager.GetObject("actualizar", resourceCulture);
@@ -223,6 +243,66 @@ namespace AgroServicios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_calendario1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo calendario1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_casa {
+            get {
+                object obj = ResourceManager.GetObject("Logo casa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_correo1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo correo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_correo2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo correo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_telefono {
+            get {
+                object obj = ResourceManager.GetObject("Logo telefono", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoCandado {
+            get {
+                object obj = ResourceManager.GetObject("LogoCandado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lupa_1 {
             get {
                 object obj = ResourceManager.GetObject("Lupa 1", resourceCulture);
@@ -286,6 +366,16 @@ namespace AgroServicios.Properties {
         internal static System.Drawing.Bitmap tdesign_money {
             get {
                 object obj = ResourceManager.GetObject("tdesign_money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telefono_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Telefono Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

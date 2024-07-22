@@ -488,6 +488,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.txtid});
@@ -496,11 +497,15 @@
             this.menuStrip1.Size = new System.Drawing.Size(954, 31);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
             // 
             // txtid
             // 
+            this.txtid.BackColor = System.Drawing.Color.White;
             this.txtid.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtid.ForeColor = System.Drawing.Color.White;
             this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
             this.txtid.Size = new System.Drawing.Size(100, 27);
             // 
             // VistaUpdateEmpleados

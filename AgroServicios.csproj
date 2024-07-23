@@ -242,6 +242,9 @@
     <EmbeddedResource Include="Vista\Cuentas\VistaUpdateEmpleados.resx">
       <DependentUpon>VistaUpdateEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Estadisticas\VistaCreateProducto.resx">
+      <DependentUpon>VistaCreateProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Estadisticas\VistaProductos.resx">
       <DependentUpon>VistaProductos.cs</DependentUpon>
     </EmbeddedResource>

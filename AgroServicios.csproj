@@ -108,14 +108,20 @@
     <Compile Include="Controlador\Login\ControladorLogin.cs" />
     <Compile Include="Controlador\Login\ControlerBasicMetodosRecuperar.cs" />
     <Compile Include="Controlador\MenuPrincipal\ControladorMenuPrincipal.cs" />
+    <Compile Include="Controlador\Productos\ControladorCreateProducto.cs" />
+    <Compile Include="Controlador\Productos\ControladorDeleteProducto.cs" />
+    <Compile Include="Controlador\Productos\ControladorUpdateProducto.cs" />
+    <Compile Include="Controlador\Productos\ControladorVistaProductos.cs" />
     <Compile Include="Modelo\DAO\DAOAdminUsers.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
+    <Compile Include="Modelo\DAO\DAOProductos.cs" />
     <Compile Include="Modelo\DAO\DAORecuperarPass.cs" />
     <Compile Include="Modelo\dbContext.cs" />
     <Compile Include="Modelo\DTO\DCorreoSoporte.cs" />
     <Compile Include="Modelo\DTO\DTOAdminUsers.cs" />
     <Compile Include="Modelo\DTO\DTOCorreoRecuperacion.cs" />
     <Compile Include="Modelo\DTO\DTOLogin.cs" />
+    <Compile Include="Modelo\DTO\DTOProductos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\Busqueda\VistaBusqueda.cs">
@@ -148,6 +154,18 @@
     <Compile Include="Vista\Cuentas\VistaUpdateEmpleados.Designer.cs">
       <DependentUpon>VistaUpdateEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Estadisticas\VistaCreateProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaCreateProducto.Designer.cs">
+      <DependentUpon>VistaCreateProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaDeleteProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaDeleteProducto.Designer.cs">
+      <DependentUpon>VistaDeleteProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Estadisticas\VistaProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,11 +178,17 @@
     <Compile Include="Vista\Estadisticas\VistaStats.Designer.cs">
       <DependentUpon>VistaStats.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Estadisticas\VistaSuministros.cs">
+    <Compile Include="Vista\Estadisticas\VistaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Estadisticas\VistaSuministros.Designer.cs">
-      <DependentUpon>VistaSuministros.cs</DependentUpon>
+    <Compile Include="Vista\Estadisticas\VistaProductos.Designer.cs">
+      <DependentUpon>VistaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaUpdateProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaUpdateProducto.Designer.cs">
+      <DependentUpon>VistaUpdateProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Login\Bienvenida.cs">
       <SubType>Form</SubType>
@@ -217,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Cuentas\VistaUpdateEmpleados.resx">
       <DependentUpon>VistaUpdateEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Estadisticas\VistaProductos.resx">
+      <DependentUpon>VistaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Estadisticas\VistaStats.resx">
       <DependentUpon>VistaStats.cs</DependentUpon>

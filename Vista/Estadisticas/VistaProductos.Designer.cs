@@ -1,6 +1,6 @@
-﻿namespace AgroServicios.Vista.Cuentas
+﻿namespace AgroServicios.Vista.Estadisticas
 {
-    partial class VistaCuentas
+    partial class VistaProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,86 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaProductos));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaCuentas));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            this.GriewEmpleados = new System.Windows.Forms.DataGridView();
-            this.contextGriewEmpleados = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.informaciónDelEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.GriewEmpleados)).BeginInit();
-            this.contextGriewEmpleados.SuspendLayout();
+            this.GriewProductos = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ContexGriewProductos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GriewProductos)).BeginInit();
+            this.ContexGriewProductos.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // GriewEmpleados
-            // 
-            this.GriewEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GriewEmpleados.BackgroundColor = System.Drawing.Color.White;
-            this.GriewEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GriewEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.GriewEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GriewEmpleados.ContextMenuStrip = this.contextGriewEmpleados;
-            this.GriewEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GriewEmpleados.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.GriewEmpleados.EnableHeadersVisualStyles = false;
-            this.GriewEmpleados.Location = new System.Drawing.Point(0, 105);
-            this.GriewEmpleados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.GriewEmpleados.Name = "GriewEmpleados";
-            this.GriewEmpleados.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.GriewEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.GriewEmpleados.RowTemplate.Height = 24;
-            this.GriewEmpleados.Size = new System.Drawing.Size(1370, 440);
-            this.GriewEmpleados.TabIndex = 2;
-            // 
-            // contextGriewEmpleados
-            // 
-            this.contextGriewEmpleados.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextGriewEmpleados.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsEliminar,
-            this.cmsUpdate,
-            this.informaciónDelEmpleadoToolStripMenuItem});
-            this.contextGriewEmpleados.Name = "contextMenuStrip1";
-            this.contextGriewEmpleados.Size = new System.Drawing.Size(219, 104);
-            // 
-            // cmsEliminar
-            // 
-            this.cmsEliminar.Image = global::AgroServicios.Properties.Resources.borrar;
-            this.cmsEliminar.Name = "cmsEliminar";
-            this.cmsEliminar.Size = new System.Drawing.Size(218, 26);
-            this.cmsEliminar.Text = "Eliminar";
-            // 
-            // cmsUpdate
-            // 
-            this.cmsUpdate.Image = global::AgroServicios.Properties.Resources.actualizar;
-            this.cmsUpdate.Name = "cmsUpdate";
-            this.cmsUpdate.Size = new System.Drawing.Size(218, 26);
-            this.cmsUpdate.Text = "Actualizar Datos";
-            // 
-            // informaciónDelEmpleadoToolStripMenuItem
-            // 
-            this.informaciónDelEmpleadoToolStripMenuItem.Image = global::AgroServicios.Properties.Resources.informacion;
-            this.informaciónDelEmpleadoToolStripMenuItem.Name = "informaciónDelEmpleadoToolStripMenuItem";
-            this.informaciónDelEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
-            this.informaciónDelEmpleadoToolStripMenuItem.Text = "Información del Empleado";
             // 
             // bunifuGradientPanel1
             // 
@@ -127,7 +66,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1370, 70);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1028, 70);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // bunifuLabel1
@@ -140,18 +79,18 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(69, 19);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(314, 37);
+            this.bunifuLabel1.Size = new System.Drawing.Size(300, 37);
             this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = "Tabla de Empleados";
+            this.bunifuLabel1.Text = "Tabla de productos";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AgroServicios.Properties.Resources.Rectangle_32;
-            this.pictureBox1.Location = new System.Drawing.Point(1110, 11);
+            this.pictureBox1.Image = global::AgroServicios.Properties.Resources.Caja;
+            this.pictureBox1.Location = new System.Drawing.Point(875, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(61, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -161,6 +100,7 @@
             this.btnAgregar.AllowAnimations = true;
             this.btnAgregar.AllowMouseEffects = true;
             this.btnAgregar.AllowToggling = true;
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAgregar.AnimationSpeed = 200;
             this.btnAgregar.AutoGenerateColors = false;
             this.btnAgregar.AutoRoundBorders = true;
@@ -203,7 +143,7 @@
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = true;
-            this.btnAgregar.Location = new System.Drawing.Point(924, 12);
+            this.btnAgregar.Location = new System.Drawing.Point(684, 11);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -246,34 +186,120 @@
             this.btnAgregar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregar.UseDefaultRadiusAndThickness = true;
             // 
-            // VistaCuentas
+            // GriewProductos
+            // 
+            this.GriewProductos.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.GriewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GriewProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GriewProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GriewProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.GriewProductos.ColumnHeadersHeight = 40;
+            this.GriewProductos.ContextMenuStrip = this.ContexGriewProductos;
+            this.GriewProductos.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.GriewProductos.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.GriewProductos.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.GriewProductos.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.GriewProductos.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.GriewProductos.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.GriewProductos.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.GriewProductos.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.GriewProductos.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.GriewProductos.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.GriewProductos.CurrentTheme.Name = null;
+            this.GriewProductos.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.GriewProductos.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.GriewProductos.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.GriewProductos.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GriewProductos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.GriewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GriewProductos.EnableHeadersVisualStyles = false;
+            this.GriewProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.GriewProductos.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.GriewProductos.HeaderBgColor = System.Drawing.Color.Empty;
+            this.GriewProductos.HeaderForeColor = System.Drawing.Color.White;
+            this.GriewProductos.Location = new System.Drawing.Point(0, 70);
+            this.GriewProductos.Name = "GriewProductos";
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.GriewProductos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.GriewProductos.RowTemplate.Height = 40;
+            this.GriewProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GriewProductos.Size = new System.Drawing.Size(1028, 223);
+            this.GriewProductos.TabIndex = 2;
+            this.GriewProductos.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // ContexGriewProductos
+            // 
+            this.ContexGriewProductos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarToolStripMenuItem,
+            this.actualizarToolStripMenuItem});
+            this.ContexGriewProductos.Name = "ContexGriewProductos";
+            this.ContexGriewProductos.Size = new System.Drawing.Size(127, 48);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Image = global::AgroServicios.Properties.Resources.borrar;
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.ShowShortcutKeys = false;
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // actualizarToolStripMenuItem
+            // 
+            this.actualizarToolStripMenuItem.Image = global::AgroServicios.Properties.Resources.actualizar;
+            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.actualizarToolStripMenuItem.Text = "Actualizar";
+            // 
+            // VistaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 545);
+            this.ClientSize = new System.Drawing.Size(1028, 293);
+            this.Controls.Add(this.GriewProductos);
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Controls.Add(this.GriewEmpleados);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "VistaCuentas";
-            this.Text = "VistaCuentas";
-            ((System.ComponentModel.ISupportInitialize)(this.GriewEmpleados)).EndInit();
-            this.contextGriewEmpleados.ResumeLayout(false);
+            this.KeyPreview = true;
+            this.Name = "VistaProductos";
+            this.Text = "VistaSuministros";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GriewProductos)).EndInit();
+            this.ContexGriewProductos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        public System.Windows.Forms.DataGridView GriewEmpleados;
-        private System.Windows.Forms.ContextMenuStrip contextGriewEmpleados;
-        private System.Windows.Forms.ToolStripMenuItem informaciónDelEmpleadoToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem cmsEliminar;
-        public System.Windows.Forms.ToolStripMenuItem cmsUpdate;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregar;
+        public Bunifu.UI.WinForms.BunifuDataGridView GriewProductos;
+        private System.Windows.Forms.ContextMenuStrip ContexGriewProductos;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
     }
 }

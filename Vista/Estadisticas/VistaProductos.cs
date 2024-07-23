@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AgroServicios.Vista.Estadisticas
 {
-    public partial class VistaSuministros : Form
+    public partial class VistaProductos : Form
     {
-        public VistaSuministros()
+        public VistaProductos()
         {
             InitializeComponent();
         }

@@ -27,7 +27,7 @@ namespace AgroServicios.Controlador.ControladorStats
 
         private void OpenSuministros(object sender, EventArgs e)
         {
-          VistaSuministros vistaSuministros = new VistaSuministros();
+          VistaProductos vistaSuministros = new VistaProductos();
             vistaSuministros.ShowDialog();
         }
     }

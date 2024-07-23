@@ -63,6 +63,17 @@ namespace AgroServicios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3_800__Ice_Cube_Icon_Stock_Illustrations__Royalty_Free_Vector_Graphics___Clip_Art {
+            get {
+                object obj = ResourceManager.GetObject("3,800+ Ice Cube Icon Stock Illustrations, Royalty-Free Vector Graphics & Clip Art" +
+                        "", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap actualizar {
             get {
                 object obj = ResourceManager.GetObject("actualizar", resourceCulture);

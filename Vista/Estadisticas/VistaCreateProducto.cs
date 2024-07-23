@@ -21,5 +21,20 @@ namespace AgroServicios.Vista.Estadisticas
         {
 
         }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

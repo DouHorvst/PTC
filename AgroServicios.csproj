@@ -391,5 +391,8 @@
   <ItemGroup>
     <None Include="Resources\Casa Logo2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3,800+ Ice Cube Icon Stock Illustrations, Royalty-Free Vector Graphics &amp; Clip Art.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

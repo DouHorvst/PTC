@@ -18,5 +18,10 @@ namespace AgroServicios.Vista.Cuentas
             InitializeComponent();
             ControladorCuentas control = new ControladorCuentas(this);
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

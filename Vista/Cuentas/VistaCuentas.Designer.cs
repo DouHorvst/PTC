@@ -67,7 +67,7 @@
             this.GriewEmpleados.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GriewEmpleados.EnableHeadersVisualStyles = false;
             this.GriewEmpleados.Location = new System.Drawing.Point(0, 105);
-            this.GriewEmpleados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GriewEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.GriewEmpleados.Name = "GriewEmpleados";
             this.GriewEmpleados.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,7 +87,7 @@
             this.cmsUpdate,
             this.informaciónDelEmpleadoToolStripMenuItem});
             this.contextGriewEmpleados.Name = "contextMenuStrip1";
-            this.contextGriewEmpleados.Size = new System.Drawing.Size(219, 104);
+            this.contextGriewEmpleados.Size = new System.Drawing.Size(219, 82);
             // 
             // cmsEliminar
             // 
@@ -245,6 +245,7 @@
             this.btnAgregar.TextMarginLeft = 0;
             this.btnAgregar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregar.UseDefaultRadiusAndThickness = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // VistaCuentas
             // 
@@ -253,7 +254,7 @@
             this.ClientSize = new System.Drawing.Size(1370, 545);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.GriewEmpleados);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaCuentas";
             this.Text = "VistaCuentas";
             ((System.ComponentModel.ISupportInitialize)(this.GriewEmpleados)).EndInit();

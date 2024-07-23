@@ -90,7 +90,7 @@
             this.PanelView.Controls.Add(this.tableLayoutPanel1);
             this.PanelView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelView.Location = new System.Drawing.Point(0, 0);
-            this.PanelView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelView.Margin = new System.Windows.Forms.Padding(2);
             this.PanelView.Name = "PanelView";
             this.PanelView.Size = new System.Drawing.Size(1028, 545);
             this.PanelView.TabIndex = 25;
@@ -100,7 +100,7 @@
             this.PanelContenedor.Controls.Add(this.tableLayoutPanel2);
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedor.Location = new System.Drawing.Point(0, 181);
-            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(1028, 364);
             this.PanelContenedor.TabIndex = 30;
@@ -124,7 +124,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263F));
@@ -141,7 +141,7 @@
             this.tableLayoutPanel6.Controls.Add(this.bunifuButton211, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(686, 2);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1009,7 +1009,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btnExit, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(757, 269);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1065,7 +1065,7 @@
             this.btnExit.IdleIconRightImage = null;
             this.btnExit.IndicateFocus = false;
             this.btnExit.Location = new System.Drawing.Point(14, 25);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnExit.OnDisabledState.BorderRadius = 1;
@@ -1114,7 +1114,7 @@
             this.tableLayoutPanel4.Controls.Add(this.bunifuButton29, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1229,7 +1229,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 62);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1028, 119);
@@ -1276,7 +1276,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnInicio, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1308,7 +1308,7 @@
             this.btnBusqueda.Image = global::AgroServicios.Properties.Resources.Lupa_1;
             this.btnBusqueda.ImageMargin = new System.Windows.Forms.Padding(0);
             this.btnBusqueda.Location = new System.Drawing.Point(903, 8);
-            this.btnBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.RoundBorders = false;
             this.btnBusqueda.ShowBorders = true;
@@ -1341,7 +1341,7 @@
             this.btnAccounts.Image = global::AgroServicios.Properties.Resources.silueta_de_multiples_usuarios;
             this.btnAccounts.ImageMargin = new System.Windows.Forms.Padding(0);
             this.btnAccounts.Location = new System.Drawing.Point(695, 6);
-            this.btnAccounts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccounts.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccounts.Name = "btnAccounts";
             this.btnAccounts.RoundBorders = false;
             this.btnAccounts.ShowBorders = true;
@@ -1374,7 +1374,7 @@
             this.btnStats.Image = global::AgroServicios.Properties.Resources.image_49;
             this.btnStats.ImageMargin = new System.Windows.Forms.Padding(0);
             this.btnStats.Location = new System.Drawing.Point(490, 6);
-            this.btnStats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStats.Margin = new System.Windows.Forms.Padding(2);
             this.btnStats.Name = "btnStats";
             this.btnStats.RoundBorders = false;
             this.btnStats.ShowBorders = true;
@@ -1407,7 +1407,7 @@
             this.btnShop.Image = global::AgroServicios.Properties.Resources.Vector__1_;
             this.btnShop.ImageMargin = new System.Windows.Forms.Padding(0);
             this.btnShop.Location = new System.Drawing.Point(287, 8);
-            this.btnShop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShop.Margin = new System.Windows.Forms.Padding(2);
             this.btnShop.Name = "btnShop";
             this.btnShop.RoundBorders = false;
             this.btnShop.ShowBorders = true;
@@ -1440,7 +1440,7 @@
             this.btnInicio.Image = global::AgroServicios.Properties.Resources.Vector;
             this.btnInicio.ImageMargin = new System.Windows.Forms.Padding(0);
             this.btnInicio.Location = new System.Drawing.Point(82, 8);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.RoundBorders = false;
             this.btnInicio.ShowBorders = true;
@@ -1460,7 +1460,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(1028, 545);
             this.Controls.Add(this.PanelView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1027, 583);
             this.Name = "VistaMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

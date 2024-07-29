@@ -17,12 +17,12 @@ namespace AgroServicios.Controlador.Productos
         private int accion;
         private string marca;
 
-        public ControladorUpdateProductos(VistaUpdateProducto Vista, int accion, int id, string name, int codigo ,decimal precio, int stock, string descripcion)
+        public ControladorUpdateProductos(VistaUpdateProducto Vista, int accion, int id, string name, string codigo ,string precio, string stock, string marca,string descripcion)
         {
             Objupdate = Vista;
             this.accion = accion;
             //Objupdate.Load += new EventHandler(InitialCharge);
-            ChargeValues(id, name, codigo,precio, stock, descripcion);
+            ChargeValues(id, name, codigo,precio, stock, marca,descripcion);
 
             Objupdate.btnUbdateProducto.Click += new EventHandler(ActualizarRegistro);
         }
@@ -44,13 +44,15 @@ namespace AgroServicios.Controlador.Productos
             }
         }
 
-        public void ChargeValues(int id, string Name, int codigo  ,decimal precio, int cantidad)
+        public void ChargeValues(int id, string name, string codigo  ,string precio, string stock, string marca,string descripcion)
         {
-            Objupdate.txtid.Text = id.ToString();
-            Objupdate.txtUbdateNombre.Text = Name;
+            Objupdate.txtUbdateid.Text = id.ToString();
+            Objupdate.txtUbdateNombre.Text = name;
             Objupdate.txtUbdateCodigo.Text = codigo;
             Objupdate.txtUbdatePrecio.Text = precio;
-            Objupdate.txtUbdateCantidad.Text = cantidad;
+            Objupdate.txtUbdateCantidad.Text = stock;
+            Objupdate.txtUbdateMarca.Text = descripcion;
+            Objupdate.txtUbdateDescripcion.Text = descripcion;
         }
 
     }

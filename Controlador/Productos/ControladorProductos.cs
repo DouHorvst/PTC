@@ -30,16 +30,18 @@ namespace AgroServicios.Controlador.Productos
         {
             int pos = ObjProductos.GriewProductos.CurrentRow.Index;
             int id;
-            string Name, precio, stock, descripcion;
-
+            string Name, codigo,precio, stock, marca,descripcion;
+             
             id = int.Parse(ObjProductos.GriewProductos[0, pos].Value.ToString());
             Name = ObjProductos.GriewProductos[1, pos].Value.ToString();
-            precio = ObjProductos.GriewProductos[3, pos].Value.ToString();
-            stock = ObjProductos.GriewProductos[4, pos].Value.ToString();
-            descripcion = ObjProductos.GriewProductos[5, pos].Value.ToString();
+            codigo = ObjProductos.GriewProductos[3, pos].Value.ToString();
+            precio = ObjProductos.GriewProductos[4, pos].Value.ToString();
+            stock = ObjProductos.GriewProductos[5, pos].Value.ToString();
+            marca = ObjProductos.GriewProductos[6, pos].Value.ToString();
+            descripcion = ObjProductos.GriewProductos[7, pos].Value.ToString();
 
 
-            VistaUpdateProducto vistaUpdate = new VistaUpdateProducto(1, id, Name, precio, stock, descripcion);
+            VistaUpdateProducto vistaUpdate = new VistaUpdateProducto(1, id, Name, codigo, precio, stock, marca,descripcion);
             vistaUpdate.ShowDialog();
             RefrescarData();
         }

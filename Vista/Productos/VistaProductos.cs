@@ -17,6 +17,7 @@ namespace AgroServicios.Vista.Productos // Ya lo reconoce
         {
             InitializeComponent();
             ControladorProductos control = new ControladorProductos(this);
+            //Se elimina los bordes del formulario
         }
 
         private void VistaProductos_Load(object sender, EventArgs e)

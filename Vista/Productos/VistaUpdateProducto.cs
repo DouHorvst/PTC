@@ -17,10 +17,10 @@ namespace AgroServicios.Vista.Productos
 {
     public partial class VistaUpdateProducto : Form
     {
-        public VistaUpdateProducto(int accion, int id, string Name, int codigo, decimal precio, int stock, string descripcion)
+        public VistaUpdateProducto(int accion, int id, string name, string codigo, string precio, string stock, string marca, string descripcion)
         {
             InitializeComponent();
-            ControladorUpdateProductos control = new ControladorUpdateProductos(this, accion, id, Name, codigo, precio, stock, descripcion);
+            ControladorUpdateProductos control = new ControladorUpdateProductos(this, accion, id, name, codigo, precio, stock, marca, descripcion);
         }
         private void bunifuGradientPanel3_Click(object sender, EventArgs e)
         {

@@ -63,7 +63,7 @@
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.DropMarcas = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.txtMarca = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnCrearProducto = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -82,6 +82,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNombreProducto = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtCodigoProducto = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtid = new System.Windows.Forms.ToolStripTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contextMenuImagenProducto.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -93,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuLabel2
@@ -168,7 +171,7 @@
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel2.BorderRadius = 30;
             this.bunifuGradientPanel2.Controls.Add(this.bunifuLabel5);
-            this.bunifuGradientPanel2.Controls.Add(this.DropMarcas);
+            this.bunifuGradientPanel2.Controls.Add(this.txtMarca);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuLabel3);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuGradientPanel2.Controls.Add(this.btnCrearProducto);
@@ -211,50 +214,50 @@
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // DropMarcas
+            // txtMarca
             // 
-            this.DropMarcas.BackColor = System.Drawing.Color.Transparent;
-            this.DropMarcas.BackgroundColor = System.Drawing.Color.White;
-            this.DropMarcas.BorderColor = System.Drawing.Color.Silver;
-            this.DropMarcas.BorderRadius = 17;
-            this.DropMarcas.Color = System.Drawing.Color.Silver;
-            this.DropMarcas.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.DropMarcas.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.DropMarcas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.DropMarcas.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.DropMarcas.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.DropMarcas.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.DropMarcas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.DropMarcas.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.DropMarcas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DropMarcas.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.DropMarcas.FillDropDown = true;
-            this.DropMarcas.FillIndicator = false;
-            this.DropMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DropMarcas.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DropMarcas.ForeColor = System.Drawing.Color.Black;
-            this.DropMarcas.FormattingEnabled = true;
-            this.DropMarcas.Icon = null;
-            this.DropMarcas.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.DropMarcas.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.DropMarcas.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.DropMarcas.IndicatorThickness = 2;
-            this.DropMarcas.IsDropdownOpened = false;
-            this.DropMarcas.ItemBackColor = System.Drawing.Color.White;
-            this.DropMarcas.ItemBorderColor = System.Drawing.Color.White;
-            this.DropMarcas.ItemForeColor = System.Drawing.Color.Black;
-            this.DropMarcas.ItemHeight = 26;
-            this.DropMarcas.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.DropMarcas.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.DropMarcas.ItemTopMargin = 3;
-            this.DropMarcas.Location = new System.Drawing.Point(508, 401);
-            this.DropMarcas.Margin = new System.Windows.Forms.Padding(2);
-            this.DropMarcas.Name = "DropMarcas";
-            this.DropMarcas.Size = new System.Drawing.Size(138, 32);
-            this.DropMarcas.TabIndex = 33;
-            this.DropMarcas.Text = null;
-            this.DropMarcas.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.DropMarcas.TextLeftMargin = 5;
+            this.txtMarca.BackColor = System.Drawing.Color.Transparent;
+            this.txtMarca.BackgroundColor = System.Drawing.Color.White;
+            this.txtMarca.BorderColor = System.Drawing.Color.Silver;
+            this.txtMarca.BorderRadius = 17;
+            this.txtMarca.Color = System.Drawing.Color.Silver;
+            this.txtMarca.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.txtMarca.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.txtMarca.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtMarca.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.txtMarca.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtMarca.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.txtMarca.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMarca.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.txtMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMarca.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.txtMarca.FillDropDown = true;
+            this.txtMarca.FillIndicator = false;
+            this.txtMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtMarca.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMarca.ForeColor = System.Drawing.Color.Black;
+            this.txtMarca.FormattingEnabled = true;
+            this.txtMarca.Icon = null;
+            this.txtMarca.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.txtMarca.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.txtMarca.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.txtMarca.IndicatorThickness = 2;
+            this.txtMarca.IsDropdownOpened = false;
+            this.txtMarca.ItemBackColor = System.Drawing.Color.White;
+            this.txtMarca.ItemBorderColor = System.Drawing.Color.White;
+            this.txtMarca.ItemForeColor = System.Drawing.Color.Black;
+            this.txtMarca.ItemHeight = 26;
+            this.txtMarca.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.txtMarca.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.txtMarca.ItemTopMargin = 3;
+            this.txtMarca.Location = new System.Drawing.Point(508, 401);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(138, 32);
+            this.txtMarca.TabIndex = 33;
+            this.txtMarca.Text = null;
+            this.txtMarca.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.txtMarca.TextLeftMargin = 5;
             // 
             // bunifuLabel3
             // 
@@ -760,6 +763,7 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuPanel1.Controls.Add(this.menuStrip1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
@@ -950,12 +954,29 @@
             this.txtCodigoProducto.WordWrap = true;
             this.txtCodigoProducto.TextChanged += new System.EventHandler(this.txtCodigoProducto_TextChanged);
             // 
+            // txtid
+            // 
+            this.txtid.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(100, 23);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.txtid});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(693, 27);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // CreateProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 525);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(733, 564);
             this.MinimumSize = new System.Drawing.Size(733, 564);
             this.Name = "CreateProducto";
@@ -975,6 +996,8 @@
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1007,6 +1030,8 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCrearProducto;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        public Bunifu.UI.WinForms.BunifuDropdown DropMarcas;
+        public Bunifu.UI.WinForms.BunifuDropdown txtMarca;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripTextBox txtid;
     }
 }

@@ -104,6 +104,8 @@
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.txtUbdateid = new System.Windows.Forms.ToolStripTextBox();
             this.txtUbdateNombre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtUbdateCodigo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
@@ -138,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagenProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -796,6 +799,7 @@
             this.bunifuPanel2.BorderThickness = 1;
             this.bunifuPanel2.Controls.Add(this.bunifuLabel8);
             this.bunifuPanel2.Controls.Add(this.pictureBox13);
+            this.bunifuPanel2.Controls.Add(this.menuStrip1);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel2.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
@@ -829,6 +833,22 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 15;
             this.pictureBox13.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.txtUbdateid});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(693, 27);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // txtUbdateid
+            // 
+            this.txtUbdateid.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUbdateid.Name = "txtUbdateid";
+            this.txtUbdateid.Size = new System.Drawing.Size(100, 23);
             // 
             // txtUbdateNombre
             // 
@@ -1776,6 +1796,7 @@
             this.ClientSize = new System.Drawing.Size(717, 525);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.bunifuGradientPanel2);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(733, 564);
             this.MinimumSize = new System.Drawing.Size(733, 564);
             this.Name = "VistaUpdateProducto";
@@ -1795,6 +1816,8 @@
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagenProducto)).EndInit();
@@ -1859,5 +1882,7 @@
         private System.Windows.Forms.ToolStripMenuItem ingresarImagenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarImagenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarImagenToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripTextBox txtUbdateid;
     }
 }

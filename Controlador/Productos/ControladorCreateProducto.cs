@@ -35,18 +35,18 @@ namespace AgroServicios.Controlador.Productos
         public void InitialCharge(object sender, EventArgs e)
         {
             //Objeto de la clase DAOProducto
-            DAOAdminUsers objAdmin = new DAOAdminUsers();
+            DAOProductos objProducto = new DAOProductos();
             //Declarando nuevo DataSet para que obtenga los datos del metodo LlenarCombo
-            DataSet ds = objAdmin.LlenarCombo();
+            DataSet ds = objProducto.LlenarCombo();
             //Llenar combobox tbRole
-            ObjCreateProducto.DropMarcas.DataSource = ds.Tables["Marca"];
-            ObjCreateProducto.DropMarcas.ValueMember = "idMarca";
-            ObjCreateProducto.DropMarcas.DisplayMember = "Nombre";
+            ObjCreateProducto.txtMarca.DataSource = ds.Tables["Marca"];
+            ObjCreateProducto.txtMarca.ValueMember = "idMarca";
+            ObjCreateProducto.txtMarca.DisplayMember = "Nombre";
 
             //La condición sirve para que al actualizar un registro, el valor del registro aparezca seleccionado.
             if (accion == 2)
             {
-                ObjCreateProducto.DropMarcas.Text = role;
+                ObjCreateProducto.txtMarca.Text = role;
             }
         }
 
@@ -59,7 +59,7 @@ namespace AgroServicios.Controlador.Productos
                 string.IsNullOrWhiteSpace(ObjCreateProducto.txtCantidadProducto.Text) ||
                 string.IsNullOrWhiteSpace(ObjCreateProducto.txtNuevaMarcaProducto.Text) ||
                 string.IsNullOrWhiteSpace(ObjCreateProducto.txtDescripcionProducto.Text) ||
-                ObjCreateProducto.DropMarcas.SelectedValue == null)
+                ObjCreateProducto.txtMarca.SelectedValue == null)
             {
                 MessageBox.Show("Todos los campos son obligatorios.",
                                 "Error de validación",
@@ -71,11 +71,11 @@ namespace AgroServicios.Controlador.Productos
 
             // Asignar los valores a las propiedades de DaoInsert
             DaoInsert.Nombre1 = ObjCreateProducto.txtNombreProducto.Text.Trim();
-            DaoInsert.Codigo1 = ObjCreateProducto.txtCodigoProducto.Text.Trim();
-            DaoInsert.Precio1 = ObjCreateProducto.txtPrecioProducto.Text.Trim();
-            DaoInsert.Stock1 =  ObjCreateProducto.txtCantidadProducto.Text.Trim();
+            DaoInsert.Codigo1 = int.Parse(ObjCreateProducto.txtCodigoProducto.Text.Trim());
+            DaoInsert.Precio1 = decimal.Parse(ObjCreateProducto.txtPrecioProducto.Text.Trim());
+            DaoInsert.Stock1 =  int.Parse(ObjCreateProducto.txtCantidadProducto.Text.Trim());
             DaoInsert.Descripcion1 = ObjCreateProducto.txtDescripcionProducto.Text.Trim();
-            DaoInsert.IdMarca = int.Parse(ObjCreateProducto.DropMarcas.SelectedValue.ToString());
+            DaoInsert.IdMarca = int.Parse(ObjCreateProducto.txtMarca.SelectedValue.ToString());
 
             int valorRetornado = DaoInsert.RegistrarProducto();
             if (valorRetornado == 1)

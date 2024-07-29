@@ -96,14 +96,14 @@ namespace AgroServicios.Modelo.DAO
                 //**
                 //Se crea el query que indica la acción que el sistema desea realizar con la base de datos
                 //el query posee parametros para evitar algún tipo de ataque como SQL Injection
-                string query2 = "INSERT INTO Productos(Nombre, Precio, Stock, imgNombre, Descripcion, idMarca) VALUES (@name, @price, @stock, @imgNombre, @description, @idBrand)";
+                string query2 = "INSERT INTO Productos(Nombre, Precio, Stock, Descripcion, idMarca) VALUES (@name, @price, @stock, @imgNombre, @description, @idBrand)";
                 //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
                 SqlCommand cmd2 = new SqlCommand(query2, Command.Connection);
                 //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO respectivo.
                 cmd2.Parameters.AddWithValue("name", Nombre1);
                 cmd2.Parameters.AddWithValue("price", Precio1);
                 cmd2.Parameters.AddWithValue("stock", Stock1);
-                cmd2.Parameters.AddWithValue("imgNomrbe", ImgNombre);
+                //cmd2.Parameters.AddWithValue("imgNomrbe", ImgNombre);
                 cmd2.Parameters.AddWithValue("description", Descripcion1);
                 cmd2.Parameters.AddWithValue("idBrand", IdMarca);
                 //Se ejecuta el comando ya con todos los valores de sus parametros.
@@ -113,16 +113,16 @@ namespace AgroServicios.Modelo.DAO
                 if (respuesta == 1)
                 {
                     //Si el valor de respuesta es 1, se procede a la inserción de los datos de la persona, como se puede observar en el diagrama de base de datos, primero es el usuario y despues la persona.
-                    string query = "INSERT INTO Productos (Nombre, Precio, Stock, imgNombre, Descripcion, idMarca) VALUES (@param1, @param2, @param3, @param4, @param5, @param6)";
+                    string query = "INSERT INTO Productos (Nombre, Precio, Stock, Descripcion, idMarca) VALUES (@param1, @param2, @param3, @param4, @param5)";
                     //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
                     SqlCommand cmd = new SqlCommand(query, Command.Connection);
                     //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO
                     cmd.Parameters.AddWithValue("param1", Nombre1);
                     cmd.Parameters.AddWithValue("param2", Precio1);
                     cmd.Parameters.AddWithValue("param3", Stock1);
-                    cmd.Parameters.AddWithValue("param4", ImgNombre);
-                    cmd.Parameters.AddWithValue("param5", Descripcion1);
-                    cmd.Parameters.AddWithValue("param6", IdMarca);
+                    //cmd.Parameters.AddWithValue("param4", ImgNombre);
+                    cmd.Parameters.AddWithValue("param4", Descripcion1);
+                    cmd.Parameters.AddWithValue("param5", IdMarca);
                     //Se ejecuta el comando ya con todos los valores de sus parametros.
                     //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
                     respuesta = cmd.ExecuteNonQuery();
@@ -180,14 +180,14 @@ namespace AgroServicios.Modelo.DAO
             {
                 Command.Connection = getConnection();
 
-                string query = "UPDATE Productos SET idProducto = @idproduct , Nombre = @nombre, Precio = @price, Stock = @stock, imgNombre = @imgNombre, Descripcion = @description, idMarca = @idbrand WHERE idProducto = @idproduct";
+                string query = "UPDATE Productos SET idProducto = @idproduct , Nombre = @nombre, Precio = @price, Stock = @stock, Descripcion = @description, idMarca = @idbrand WHERE idProducto = @idproduct";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
 
                 cmd.Parameters.AddWithValue("@idproduct",IdProducto);
                 cmd.Parameters.AddWithValue("@nombre", Nombre1);
                 cmd.Parameters.AddWithValue("@price", Precio1);
                 cmd.Parameters.AddWithValue("@stock", Stock1);
-                cmd.Parameters.AddWithValue("@imgNombre", ImgNombre);
+                //cmd.Parameters.AddWithValue("@imgNombre", ImgNombre);
                 cmd.Parameters.AddWithValue("@description", Descripcion1);
                 cmd.Parameters.AddWithValue("@idbrand", IdMarca);
 

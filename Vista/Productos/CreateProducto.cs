@@ -16,7 +16,7 @@ namespace AgroServicios.Vista.Productos
         public CreateProducto(int accion)
         {
             InitializeComponent();
-            ControladorCreateProducto ObjUsers = new ControladorCreateProducto(this, accion);
+            ControladorCreateProducto ObjProductos = new ControladorCreateProducto(this, accion);
         }
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace AgroServicios.Vista.Productos
         }
 
         private void VistaCreateProducto_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigoProducto_TextChanged(object sender, EventArgs e)
         {
 
         }

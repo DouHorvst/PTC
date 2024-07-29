@@ -110,6 +110,7 @@
     <Compile Include="Controlador\MenuPrincipal\ControladorMenuPrincipal.cs" />
     <Compile Include="Controlador\Productos\ControladorCreateProducto.cs" />
     <Compile Include="Controlador\Productos\ControladorProductos.cs" />
+    <Compile Include="Controlador\Productos\ControladorUpdateProductos.cs" />
     <Compile Include="Modelo\DAO\DAOAdminUsers.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
     <Compile Include="Modelo\DAO\DAOProductos.cs" />

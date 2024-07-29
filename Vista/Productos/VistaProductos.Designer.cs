@@ -36,9 +36,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAgregarProducto = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.ContexGriewProductos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.GriewProductos = new System.Windows.Forms.DataGridView();
+            this.cmsInformacion = new System.Windows.Forms.ToolStripMenuItem();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContexGriewProductos.SuspendLayout();
@@ -185,25 +186,26 @@
             // ContexGriewProductos
             // 
             this.ContexGriewProductos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eliminarToolStripMenuItem,
-            this.actualizarToolStripMenuItem});
+            this.cmsEliminar,
+            this.cmsActualizar,
+            this.cmsInformacion});
             this.ContexGriewProductos.Name = "ContexGriewProductos";
-            this.ContexGriewProductos.Size = new System.Drawing.Size(127, 48);
+            this.ContexGriewProductos.Size = new System.Drawing.Size(181, 92);
             // 
-            // eliminarToolStripMenuItem
+            // cmsEliminar
             // 
-            this.eliminarToolStripMenuItem.Image = global::AgroServicios.Properties.Resources.borrar;
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.ShowShortcutKeys = false;
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.cmsEliminar.Image = global::AgroServicios.Properties.Resources.borrar;
+            this.cmsEliminar.Name = "cmsEliminar";
+            this.cmsEliminar.ShowShortcutKeys = false;
+            this.cmsEliminar.Size = new System.Drawing.Size(180, 22);
+            this.cmsEliminar.Text = "Eliminar";
             // 
-            // actualizarToolStripMenuItem
+            // cmsActualizar
             // 
-            this.actualizarToolStripMenuItem.Image = global::AgroServicios.Properties.Resources.actualizar;
-            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.actualizarToolStripMenuItem.Text = "Actualizar";
+            this.cmsActualizar.Image = global::AgroServicios.Properties.Resources.actualizar;
+            this.cmsActualizar.Name = "cmsActualizar";
+            this.cmsActualizar.Size = new System.Drawing.Size(180, 22);
+            this.cmsActualizar.Text = "Actualizar";
             // 
             // GriewProductos
             // 
@@ -216,6 +218,13 @@
             this.GriewProductos.RowHeadersWidth = 51;
             this.GriewProductos.Size = new System.Drawing.Size(1028, 218);
             this.GriewProductos.TabIndex = 1;
+            // 
+            // cmsInformacion
+            // 
+            this.cmsInformacion.Image = global::AgroServicios.Properties.Resources.informacion;
+            this.cmsInformacion.Name = "cmsInformacion";
+            this.cmsInformacion.Size = new System.Drawing.Size(180, 22);
+            this.cmsInformacion.Text = "Informacion";
             // 
             // VistaProductos
             // 
@@ -242,9 +251,10 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregarProducto;
-        private System.Windows.Forms.ContextMenuStrip ContexGriewProductos;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
         public System.Windows.Forms.DataGridView GriewProductos;
+        public System.Windows.Forms.ToolStripMenuItem cmsEliminar;
+        public System.Windows.Forms.ContextMenuStrip ContexGriewProductos;
+        public System.Windows.Forms.ToolStripMenuItem cmsInformacion;
+        public System.Windows.Forms.ToolStripMenuItem cmsActualizar;
     }
 }

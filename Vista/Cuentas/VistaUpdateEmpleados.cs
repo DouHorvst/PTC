@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AgroServicios.Vista.Estadisticas;
 
 namespace AgroServicios.Vista.Cuentas
 {

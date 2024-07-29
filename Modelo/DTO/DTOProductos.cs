@@ -11,9 +11,9 @@ namespace AgroServicios.Modelo.DTO
         //Productos
         private int idProducto;
         private string Nombre;
+        private int Codigo;
         private decimal Precio;
         private int Stock;
-        private string imgNombre;
         private string Descripcion;
         //Para la tabla de productos
         private int idMarca;
@@ -22,8 +22,8 @@ namespace AgroServicios.Modelo.DTO
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public decimal Precio1 { get => Precio; set => Precio = value; }
         public int Stock1 { get => Stock; set => Stock = value; }
-        public string ImgNombre { get => imgNombre; set => imgNombre = value; }
         public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
         public int IdMarca { get => idMarca; set => idMarca = value; }
+        public int Codigo1 { get => Codigo; set => Codigo = value; }
     }
 }

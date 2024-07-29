@@ -96,7 +96,7 @@ namespace AgroServicios.Modelo.DAO
                 //**
                 //Se crea el query que indica la acción que el sistema desea realizar con la base de datos
                 //el query posee parametros para evitar algún tipo de ataque como SQL Injection
-                string query2 = "INSERT INTO Productos(Nombre,Precio, Stock, Descripcion, idMarca) VALUES (@name, @price, @stock, @description, @idBrand)";
+                string query2 = "INSERT INTO Productos(Nombre, idMarca, Precio, Stock, Descripcion) VALUES (@name, @price, @stock, @description, @idBrand)";
                 //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
                 SqlCommand cmd2 = new SqlCommand(query2, Command.Connection);
                 //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO respectivo.

@@ -82,8 +82,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNombreProducto = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtCodigoProducto = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtid = new System.Windows.Forms.ToolStripTextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contextMenuImagenProducto.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
@@ -95,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuLabel2
@@ -763,7 +760,6 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuPanel1.Controls.Add(this.menuStrip1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
@@ -954,29 +950,12 @@
             this.txtCodigoProducto.WordWrap = true;
             this.txtCodigoProducto.TextChanged += new System.EventHandler(this.txtCodigoProducto_TextChanged);
             // 
-            // txtid
-            // 
-            this.txtid.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 23);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtid});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(693, 27);
-            this.menuStrip1.TabIndex = 16;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // CreateProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 525);
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(733, 564);
             this.MinimumSize = new System.Drawing.Size(733, 564);
             this.Name = "CreateProducto";
@@ -996,8 +975,6 @@
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1031,7 +1008,5 @@
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCrearProducto;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         public Bunifu.UI.WinForms.BunifuDropdown txtMarca;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        public System.Windows.Forms.ToolStripTextBox txtid;
     }
 }

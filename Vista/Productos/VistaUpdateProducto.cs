@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AgroServicios.Vista.Estadisticas
 {
-    public partial class VistaProductos : Form
+    public partial class VistaUpdateProducto : Form
     {
-        public VistaProductos()
+        public VistaUpdateProducto()
         {
             InitializeComponent();
+        }
+
+        private void bunifuGradientPanel3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

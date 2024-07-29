@@ -64,8 +64,9 @@
             this.Panel1.Controls.Add(this.tableLayoutPanel1);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1392, 621);
+            this.Panel1.Size = new System.Drawing.Size(1028, 505);
             this.Panel1.TabIndex = 25;
             // 
             // tableLayoutPanel1
@@ -79,11 +80,12 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1392, 621);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 505);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -94,12 +96,14 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel9, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(699, 313);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(516, 254);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(690, 305);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(510, 249);
             this.tableLayoutPanel5.TabIndex = 3;
+            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // tableLayoutPanel9
             // 
@@ -107,13 +111,14 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Controls.Add(this.btnAbrirSuministros, 0, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(106, 3);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(78, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(477, 299);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(353, 245);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // btnAbrirSuministros
@@ -166,7 +171,8 @@
             this.btnAbrirSuministros.IdleIconLeftImage = global::AgroServicios.Properties.Resources.Caja;
             this.btnAbrirSuministros.IdleIconRightImage = null;
             this.btnAbrirSuministros.IndicateFocus = true;
-            this.btnAbrirSuministros.Location = new System.Drawing.Point(3, 62);
+            this.btnAbrirSuministros.Location = new System.Drawing.Point(2, 51);
+            this.btnAbrirSuministros.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbrirSuministros.Name = "btnAbrirSuministros";
             this.btnAbrirSuministros.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAbrirSuministros.OnDisabledState.BorderRadius = 100;
@@ -200,13 +206,14 @@
             this.btnAbrirSuministros.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAbrirSuministros.OnPressedState.IconLeftImage = null;
             this.btnAbrirSuministros.OnPressedState.IconRightImage = null;
-            this.btnAbrirSuministros.Size = new System.Drawing.Size(471, 173);
+            this.btnAbrirSuministros.Size = new System.Drawing.Size(349, 143);
             this.btnAbrirSuministros.TabIndex = 5;
             this.btnAbrirSuministros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAbrirSuministros.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAbrirSuministros.TextMarginLeft = 0;
             this.btnAbrirSuministros.TextPadding = new System.Windows.Forms.Padding(0, 0, 80, 0);
             this.btnAbrirSuministros.UseDefaultRadiusAndThickness = true;
+            this.btnAbrirSuministros.Click += new System.EventHandler(this.btnAbrirSuministros_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -216,11 +223,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(699, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(516, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(690, 304);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(510, 248);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // tableLayoutPanel8
@@ -229,13 +237,14 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.Controls.Add(this.btnAbrirProveedores, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(106, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(78, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(477, 298);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(353, 244);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // btnAbrirProveedores
@@ -288,7 +297,8 @@
             this.btnAbrirProveedores.IdleIconLeftImage = global::AgroServicios.Properties.Resources.VAn;
             this.btnAbrirProveedores.IdleIconRightImage = null;
             this.btnAbrirProveedores.IndicateFocus = true;
-            this.btnAbrirProveedores.Location = new System.Drawing.Point(3, 62);
+            this.btnAbrirProveedores.Location = new System.Drawing.Point(2, 50);
+            this.btnAbrirProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbrirProveedores.Name = "btnAbrirProveedores";
             this.btnAbrirProveedores.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAbrirProveedores.OnDisabledState.BorderRadius = 100;
@@ -322,7 +332,7 @@
             this.btnAbrirProveedores.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAbrirProveedores.OnPressedState.IconLeftImage = null;
             this.btnAbrirProveedores.OnPressedState.IconRightImage = null;
-            this.btnAbrirProveedores.Size = new System.Drawing.Size(471, 172);
+            this.btnAbrirProveedores.Size = new System.Drawing.Size(349, 142);
             this.btnAbrirProveedores.TabIndex = 4;
             this.btnAbrirProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAbrirProveedores.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -338,11 +348,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel7, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(690, 304);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(510, 248);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // tableLayoutPanel7
@@ -351,13 +362,14 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Controls.Add(this.bunifuButton22, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(106, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(78, 2);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(477, 298);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(353, 244);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // bunifuButton22
@@ -410,7 +422,8 @@
             this.bunifuButton22.IdleIconLeftImage = global::AgroServicios.Properties.Resources.tdesign_money;
             this.bunifuButton22.IdleIconRightImage = null;
             this.bunifuButton22.IndicateFocus = true;
-            this.bunifuButton22.Location = new System.Drawing.Point(3, 62);
+            this.bunifuButton22.Location = new System.Drawing.Point(2, 50);
+            this.bunifuButton22.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuButton22.Name = "bunifuButton22";
             this.bunifuButton22.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton22.OnDisabledState.BorderRadius = 100;
@@ -444,7 +457,7 @@
             this.bunifuButton22.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton22.OnPressedState.IconLeftImage = null;
             this.bunifuButton22.OnPressedState.IconRightImage = null;
-            this.bunifuButton22.Size = new System.Drawing.Size(471, 172);
+            this.bunifuButton22.Size = new System.Drawing.Size(349, 142);
             this.bunifuButton22.TabIndex = 3;
             this.bunifuButton22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bunifuButton22.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -460,11 +473,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 313);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 254);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(690, 305);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(510, 249);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -473,13 +487,14 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Controls.Add(this.bunifuButton21, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(106, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(78, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(477, 299);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(353, 245);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // bunifuButton21
@@ -532,7 +547,8 @@
             this.bunifuButton21.IdleIconLeftImage = global::AgroServicios.Properties.Resources.hugeicons_shopping_basket_01;
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.IndicateFocus = true;
-            this.bunifuButton21.Location = new System.Drawing.Point(3, 62);
+            this.bunifuButton21.Location = new System.Drawing.Point(2, 51);
+            this.bunifuButton21.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuButton21.Name = "bunifuButton21";
             this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.OnDisabledState.BorderRadius = 100;
@@ -566,7 +582,7 @@
             this.bunifuButton21.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton21.OnPressedState.IconLeftImage = null;
             this.bunifuButton21.OnPressedState.IconRightImage = null;
-            this.bunifuButton21.Size = new System.Drawing.Size(471, 173);
+            this.bunifuButton21.Size = new System.Drawing.Size(349, 143);
             this.bunifuButton21.TabIndex = 4;
             this.bunifuButton21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bunifuButton21.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -576,11 +592,12 @@
             // 
             // VistaStats
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.ClientSize = new System.Drawing.Size(1392, 621);
+            this.ClientSize = new System.Drawing.Size(1028, 505);
             this.Controls.Add(this.Panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaStats";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estadisticas";

@@ -23,5 +23,10 @@ namespace AgroServicios.Vista.Cuentas
         {
 
         }
+
+        private void VistaCuentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

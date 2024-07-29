@@ -13,5 +13,9 @@ namespace AgroServicios.Vista.Cuentas
 
         }
 
+        private void CreateUser_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

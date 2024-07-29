@@ -51,7 +51,7 @@
             // GriewEmpleados
             // 
             this.GriewEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.GriewEmpleados.BackgroundColor = System.Drawing.Color.White;
+            this.GriewEmpleados.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.GriewEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
@@ -66,6 +66,7 @@
             this.GriewEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GriewEmpleados.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GriewEmpleados.EnableHeadersVisualStyles = false;
+            this.GriewEmpleados.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.GriewEmpleados.Location = new System.Drawing.Point(0, 105);
             this.GriewEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.GriewEmpleados.Name = "GriewEmpleados";
@@ -257,6 +258,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaCuentas";
             this.Text = "VistaCuentas";
+            this.Load += new System.EventHandler(this.VistaCuentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GriewEmpleados)).EndInit();
             this.contextGriewEmpleados.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);

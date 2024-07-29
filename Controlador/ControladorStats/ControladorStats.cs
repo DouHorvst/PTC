@@ -1,5 +1,6 @@
 ﻿using System;
 using AgroServicios.Vista.Estadisticas;
+using AgroServicios.Vista.Productos;
 
 namespace AgroServicios.Controlador.ControladorStats
 {
@@ -27,7 +28,7 @@ namespace AgroServicios.Controlador.ControladorStats
 
         private void OpenSuministros(object sender, EventArgs e)
         {
-          VistaProductos vistaSuministros = new VistaProductos();
+           VistaProductos vistaSuministros = new VistaProductos();
             vistaSuministros.ShowDialog();
         }
     }

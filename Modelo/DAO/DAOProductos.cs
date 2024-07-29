@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgroServicios.Modelo.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,10 @@ using System.Data.SqlClient;
 using System.Net;
 using System.Web.Security;
 using System.Windows.Forms;
-using AgroServicios.Modelo.DTO;
+
 namespace AgroServicios.Modelo.DAO
 {
-    internal class DAOProductos : DTOProductos
+    class DAOProductos : DTOProductos
     {
 
         readonly SqlCommand Command = new SqlCommand();
@@ -173,7 +174,7 @@ namespace AgroServicios.Modelo.DAO
 
         }
 
-        public int ActualizarEmpleado()
+        public int ActualizarProducto()
         {
             try
             {
@@ -182,13 +183,13 @@ namespace AgroServicios.Modelo.DAO
                 string query = "UPDATE Productos SET idProducto = @idproduct , Nombre = @nombre, Precio = @price, Stock = @stock, imgNombre = @imgNombre, Descripcion = @description, idMarca = @idbrand WHERE idProducto = @idproduct";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
 
-                cmd.Parameters.AddWithValue("@idProducto",IdProducto);
+                cmd.Parameters.AddWithValue("@idproduct",IdProducto);
                 cmd.Parameters.AddWithValue("@nombre", Nombre1);
-                cmd.Parameters.AddWithValue("@fechaDeNacimiento", FechaDeNacimiento1);
-                cmd.Parameters.AddWithValue("@telefono", Telefono1);
-                cmd.Parameters.AddWithValue("@correo", Correo1);
-                cmd.Parameters.AddWithValue("@dui", DUI1);
-                cmd.Parameters.AddWithValue("@direccion", Direccion1);
+                cmd.Parameters.AddWithValue("@price", Precio1);
+                cmd.Parameters.AddWithValue("@stock", Stock1);
+                cmd.Parameters.AddWithValue("@imgNombre", ImgNombre);
+                cmd.Parameters.AddWithValue("@description", Descripcion1);
+                cmd.Parameters.AddWithValue("@idbrand", IdMarca);
 
                 int respuesta = cmd.ExecuteNonQuery();
                 return respuesta;

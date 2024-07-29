@@ -19,5 +19,14 @@ namespace AgroServicios.Vista.Estadisticas
             ControladorStats control = new ControladorStats(this);
         }
 
+        private void btnAbrirSuministros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -74,7 +74,7 @@
             // maskedDuiUpdate
             // 
             this.maskedDuiUpdate.Location = new System.Drawing.Point(378, 347);
-            this.maskedDuiUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskedDuiUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.maskedDuiUpdate.Mask = "00000000-0";
             this.maskedDuiUpdate.Name = "maskedDuiUpdate";
             this.maskedDuiUpdate.Size = new System.Drawing.Size(62, 20);
@@ -110,7 +110,7 @@
             this.txtUpdateDireccion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUpdateDireccion.Lines = new string[0];
             this.txtUpdateDireccion.Location = new System.Drawing.Point(90, 282);
-            this.txtUpdateDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateDireccion.MaxLength = 32767;
             this.txtUpdateDireccion.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUpdateDireccion.Modified = false;
@@ -136,7 +136,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUpdateDireccion.OnIdleState = stateProperties4;
-            this.txtUpdateDireccion.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateDireccion.Padding = new System.Windows.Forms.Padding(2);
             this.txtUpdateDireccion.PasswordChar = '\0';
             this.txtUpdateDireccion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUpdateDireccion.PlaceholderText = "Dirección";
@@ -187,7 +187,7 @@
             this.txtUpdateCorreo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUpdateCorreo.Lines = new string[0];
             this.txtUpdateCorreo.Location = new System.Drawing.Point(90, 219);
-            this.txtUpdateCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateCorreo.MaxLength = 32767;
             this.txtUpdateCorreo.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUpdateCorreo.Modified = false;
@@ -213,7 +213,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUpdateCorreo.OnIdleState = stateProperties8;
-            this.txtUpdateCorreo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateCorreo.Padding = new System.Windows.Forms.Padding(2);
             this.txtUpdateCorreo.PasswordChar = '\0';
             this.txtUpdateCorreo.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUpdateCorreo.PlaceholderText = "Correo eléctronico";
@@ -264,7 +264,7 @@
             this.txtUpdatePhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUpdatePhone.Lines = new string[0];
             this.txtUpdatePhone.Location = new System.Drawing.Point(90, 151);
-            this.txtUpdatePhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdatePhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdatePhone.MaxLength = 32767;
             this.txtUpdatePhone.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUpdatePhone.Modified = false;
@@ -290,7 +290,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUpdatePhone.OnIdleState = stateProperties12;
-            this.txtUpdatePhone.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdatePhone.Padding = new System.Windows.Forms.Padding(2);
             this.txtUpdatePhone.PasswordChar = '\0';
             this.txtUpdatePhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUpdatePhone.PlaceholderText = "Numero celular";
@@ -331,7 +331,7 @@
             this.PickerBirthUpdate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.PickerBirthUpdate.LeftTextMargin = 5;
             this.PickerBirthUpdate.Location = new System.Drawing.Point(44, 347);
-            this.PickerBirthUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PickerBirthUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.PickerBirthUpdate.MinimumSize = new System.Drawing.Size(4, 32);
             this.PickerBirthUpdate.Name = "PickerBirthUpdate";
             this.PickerBirthUpdate.Size = new System.Drawing.Size(200, 32);
@@ -367,7 +367,7 @@
             this.txtUpdateNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUpdateNombre.Lines = new string[0];
             this.txtUpdateNombre.Location = new System.Drawing.Point(90, 81);
-            this.txtUpdateNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtUpdateNombre.MaxLength = 32767;
             this.txtUpdateNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUpdateNombre.Modified = false;
@@ -393,7 +393,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUpdateNombre.OnIdleState = stateProperties16;
-            this.txtUpdateNombre.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUpdateNombre.Padding = new System.Windows.Forms.Padding(2);
             this.txtUpdateNombre.PasswordChar = '\0';
             this.txtUpdateNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtUpdateNombre.PlaceholderText = "Nombre completo";
@@ -464,7 +464,7 @@
             this.btnUpdateEmpleado.IdleIconRightImage = null;
             this.btnUpdateEmpleado.IndicateFocus = false;
             this.btnUpdateEmpleado.Location = new System.Drawing.Point(221, 393);
-            this.btnUpdateEmpleado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateEmpleado.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateEmpleado.Name = "btnUpdateEmpleado";
             this.btnUpdateEmpleado.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUpdateEmpleado.OnDisabledState.BorderRadius = 41;
@@ -515,7 +515,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(716, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(717, 27);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.Visible = false;
@@ -527,14 +527,14 @@
             this.txtid.ForeColor = System.Drawing.Color.White;
             this.txtid.Name = "txtid";
             this.txtid.ReadOnly = true;
-            this.txtid.Size = new System.Drawing.Size(76, 21);
+            this.txtid.Size = new System.Drawing.Size(76, 23);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::AgroServicios.Properties.Resources.Rectangle_32;
             this.pictureBox3.Location = new System.Drawing.Point(44, 81);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -546,7 +546,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = global::AgroServicios.Properties.Resources.Logo_Correo;
             this.pictureBox5.Location = new System.Drawing.Point(44, 219);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(42, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -558,7 +558,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = global::AgroServicios.Properties.Resources.Casa_Logo2;
             this.pictureBox6.Location = new System.Drawing.Point(44, 282);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(42, 41);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -570,7 +570,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = global::AgroServicios.Properties.Resources.Telefono_logo1;
             this.pictureBox4.Location = new System.Drawing.Point(44, 151);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(42, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -598,7 +598,7 @@
             this.bunifuPanel1.Controls.Add(this.PickerBirthUpdate);
             this.bunifuPanel1.Controls.Add(this.maskedDuiUpdate);
             this.bunifuPanel1.Location = new System.Drawing.Point(74, 30);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(577, 456);
@@ -612,7 +612,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.Location = new System.Drawing.Point(170, 24);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(243, 28);
@@ -634,7 +634,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(226)))), ((int)(((byte)(28)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(717, 525);
@@ -648,11 +648,12 @@
             this.ClientSize = new System.Drawing.Size(717, 525);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(733, 564);
             this.MinimumSize = new System.Drawing.Size(733, 564);
             this.Name = "VistaUpdateEmpleados";
             this.Text = "VistaUpdateEmpleados";
+            this.Load += new System.EventHandler(this.VistaUpdateEmpleados_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

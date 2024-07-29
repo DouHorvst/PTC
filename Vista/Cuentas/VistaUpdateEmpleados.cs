@@ -20,5 +20,9 @@ namespace AgroServicios.Vista.Cuentas
             ControladorUpdateEmpleados control = new ControladorUpdateEmpleados(this, accion, id, Name, phone, email, dni, address, birthday);  
         }
 
+        private void VistaUpdateEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

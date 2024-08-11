@@ -23,7 +23,10 @@ namespace AgroServicios.Vista.Productos1
         }
         private void VistaUbdateProducto_Load(object sender, EventArgs e)
         {
-
+            bunifuGradientPanel2.GradientBottomLeft = Color.FromArgb(118, 88, 152);
+            bunifuGradientPanel2.GradientTopRight = Color.FromArgb(118, 88, 152);
+            bunifuGradientPanel2.GradientBottomRight = Color.FromArgb(34, 36, 49);
+            bunifuGradientPanel2.GradientTopLeft = Color.FromArgb(34, 36, 49);
         }
 
         private void bunifuGradientPanel2_Click(object sender, EventArgs e)

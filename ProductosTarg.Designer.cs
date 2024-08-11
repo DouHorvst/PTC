@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductosTarg));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.lbldesc = new System.Windows.Forms.RichTextBox();
             this.ptbimg = new System.Windows.Forms.PictureBox();
@@ -37,6 +37,8 @@
             this.lblcodigo = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblPrecio = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblname = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbimg)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +51,8 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Black;
             this.bunifuPanel1.BorderRadius = 30;
             this.bunifuPanel1.BorderThickness = 2;
+            this.bunifuPanel1.Controls.Add(this.bunifuLabel2);
+            this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Controls.Add(this.lbldesc);
             this.bunifuPanel1.Controls.Add(this.ptbimg);
             this.bunifuPanel1.Controls.Add(this.btnadd);
@@ -57,28 +61,31 @@
             this.bunifuPanel1.Controls.Add(this.lblname);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(487, 285);
+            this.bunifuPanel1.Size = new System.Drawing.Size(365, 232);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // lbldesc
             // 
             this.lbldesc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldesc.Location = new System.Drawing.Point(257, 130);
+            this.lbldesc.Location = new System.Drawing.Point(195, 106);
+            this.lbldesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbldesc.Name = "lbldesc";
             this.lbldesc.ReadOnly = true;
             this.lbldesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.lbldesc.Size = new System.Drawing.Size(177, 96);
+            this.lbldesc.Size = new System.Drawing.Size(156, 79);
             this.lbldesc.TabIndex = 7;
             this.lbldesc.Text = "";
             // 
             // ptbimg
             // 
             this.ptbimg.Image = global::AgroServicios.Properties.Resources.Group;
-            this.ptbimg.Location = new System.Drawing.Point(16, 20);
+            this.ptbimg.Location = new System.Drawing.Point(12, 16);
+            this.ptbimg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbimg.Name = "ptbimg";
-            this.ptbimg.Size = new System.Drawing.Size(219, 245);
+            this.ptbimg.Size = new System.Drawing.Size(164, 199);
             this.ptbimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbimg.TabIndex = 6;
             this.ptbimg.TabStop = false;
@@ -102,11 +109,11 @@
             this.btnadd.ColorContrastOnClick = 45;
             this.btnadd.ColorContrastOnHover = 45;
             this.btnadd.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnadd.CustomizableEdges = borderEdges6;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnadd.CustomizableEdges = borderEdges1;
             this.btnadd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnadd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnadd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -124,13 +131,14 @@
             this.btnadd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnadd.IconSize = 25;
             this.btnadd.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnadd.IdleBorderRadius = 31;
+            this.btnadd.IdleBorderRadius = 25;
             this.btnadd.IdleBorderThickness = 1;
             this.btnadd.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.btnadd.IdleIconLeftImage = null;
             this.btnadd.IdleIconRightImage = null;
             this.btnadd.IndicateFocus = false;
-            this.btnadd.Location = new System.Drawing.Point(257, 232);
+            this.btnadd.Location = new System.Drawing.Point(193, 188);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnadd.Name = "btnadd";
             this.btnadd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnadd.OnDisabledState.BorderRadius = 1;
@@ -164,7 +172,7 @@
             this.btnadd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnadd.OnPressedState.IconLeftImage = null;
             this.btnadd.OnPressedState.IconRightImage = null;
-            this.btnadd.Size = new System.Drawing.Size(177, 33);
+            this.btnadd.Size = new System.Drawing.Size(133, 27);
             this.btnadd.TabIndex = 5;
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnadd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -178,10 +186,11 @@
             this.lblcodigo.AutoEllipsis = false;
             this.lblcodigo.CursorType = null;
             this.lblcodigo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcodigo.Location = new System.Drawing.Point(257, 101);
+            this.lblcodigo.Location = new System.Drawing.Point(253, 79);
+            this.lblcodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblcodigo.Name = "lblcodigo";
             this.lblcodigo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblcodigo.Size = new System.Drawing.Size(55, 20);
+            this.lblcodigo.Size = new System.Drawing.Size(44, 17);
             this.lblcodigo.TabIndex = 3;
             this.lblcodigo.Text = "Codígo";
             this.lblcodigo.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -193,10 +202,11 @@
             this.lblPrecio.AutoEllipsis = false;
             this.lblPrecio.CursorType = null;
             this.lblPrecio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(257, 63);
+            this.lblPrecio.Location = new System.Drawing.Point(253, 51);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPrecio.Size = new System.Drawing.Size(47, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(38, 17);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "Precio";
             this.lblPrecio.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -208,24 +218,58 @@
             this.lblname.AutoEllipsis = false;
             this.lblname.CursorType = null;
             this.lblname.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(257, 20);
+            this.lblname.Location = new System.Drawing.Point(193, 16);
+            this.lblname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblname.Name = "lblname";
             this.lblname.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblname.Size = new System.Drawing.Size(177, 19);
+            this.lblname.Size = new System.Drawing.Size(146, 17);
             this.lblname.TabIndex = 1;
             this.lblname.Text = "Nombre del producto";
             this.lblname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblname.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Location = new System.Drawing.Point(195, 49);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(47, 17);
+            this.bunifuLabel1.TabIndex = 8;
+            this.bunifuLabel1.Text = "Precio:";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.CursorType = null;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Location = new System.Drawing.Point(188, 77);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(55, 17);
+            this.bunifuLabel2.TabIndex = 9;
+            this.bunifuLabel2.Text = "Codigo:";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // ProductosTarg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(8, 15, 8, 15);
+            this.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
             this.Name = "ProductosTarg";
-            this.Size = new System.Drawing.Size(487, 285);
+            this.Size = new System.Drawing.Size(365, 232);
             this.Load += new System.EventHandler(this.ProductosTarg_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
@@ -243,5 +287,7 @@
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnadd;
         public System.Windows.Forms.PictureBox ptbimg;
         public System.Windows.Forms.RichTextBox lbldesc;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
     }
 }

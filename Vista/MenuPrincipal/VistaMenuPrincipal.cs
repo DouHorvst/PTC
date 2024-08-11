@@ -46,7 +46,7 @@ namespace AgroServicios.Vista.MenuPrincipal
                 lblhora.ForeColor = Color.White;
                 lblfecha.ForeColor = Color.FromArgb(68, 197, 197);
                 PanelContenedor.BackColor = Color.FromArgb(18,18,18);
-                btnprin2.IdleFillColor = Color.FromArgb(82, 208, 83);
+                btnProductos.IdleFillColor = Color.FromArgb(82, 208, 83);
                 btnprin1.IdleFillColor = Color.FromArgb(82, 208, 83);
                 btn1.IdleFillColor = Color.FromArgb(118, 88, 152);
                 btn2.IdleFillColor = Color.FromArgb(118, 88, 152);

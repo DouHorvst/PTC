@@ -1,4 +1,5 @@
-﻿using AgroServicios.Controlador.CuentasContralador;
+﻿using AgroServicios.Controlador;
+using AgroServicios.Controlador.CuentasContralador;
 using AgroServicios.Controlador.Productos1;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,16 @@ namespace AgroServicios.Vista.Productos1
 
         private void VistaUbdateMarca_Load(object sender, EventArgs e)
         {
-
+            if (ControladorTema.IsDarkMode == true)
+            {
+                this.BackColor = Color.Black;
+                bunifuGradientPanel1.GradientBottomLeft = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel1.GradientTopRight = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel1.GradientBottomRight = Color.FromArgb(34, 36, 49);
+                bunifuGradientPanel1.GradientTopLeft = Color.FromArgb(34, 36, 49);
+                btnUbdateMarca.IdleFillColor = Color.FromArgb(118, 88, 152);
+                btnUbdateMarca.ForeColor = Color.White;
+            }
         }
     }
 }

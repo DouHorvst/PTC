@@ -50,7 +50,7 @@ namespace AgroServicios.Controlador.Productos1
         public void NuevoRegistro(object sender, EventArgs e)
         {
             // Validar que los campos no estén vacíos
-            if (ObjCreateMarca.txtNombreMarca.Text  == null)
+            if (string.IsNullOrWhiteSpace(ObjCreateMarca.txtNombreMarca.Text)) 
             {
                 MessageBox.Show("Todos los campos son obligatorios.",
                                 "Error de validación",

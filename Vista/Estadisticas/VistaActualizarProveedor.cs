@@ -30,5 +30,10 @@ namespace AgroServicios.Vista.Estadisticas
         {
 
         }
+
+        private void VistaActualizarProveedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

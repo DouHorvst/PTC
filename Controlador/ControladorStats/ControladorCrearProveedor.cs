@@ -11,7 +11,7 @@ using System.Data;
 
 namespace AgroServicios.Controlador.ControladorStats
 {
-    internal class ControladorCrearProveedor
+    class ControladorCrearProveedor
     {
         VistaAgregarProveedor ObjProveedor;
         public ControladorCrearProveedor(VistaAgregarProveedor vista) 

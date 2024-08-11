@@ -52,6 +52,8 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.txtid = new System.Windows.Forms.ToolStripTextBox();
             this.txtUpdateCompany = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtUpdateNombre = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -59,8 +61,6 @@
             this.txtUpdateCorreo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtUpdateID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnUpdateProveedor = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.txtid = new System.Windows.Forms.ToolStripTextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -107,6 +107,29 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(577, 456);
             this.bunifuPanel1.TabIndex = 28;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.txtid});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(577, 27);
+            this.menuStrip1.TabIndex = 30;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
+            // 
+            // txtid
+            // 
+            this.txtid.BackColor = System.Drawing.Color.White;
+            this.txtid.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtid.ForeColor = System.Drawing.Color.White;
+            this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
+            this.txtid.Size = new System.Drawing.Size(76, 23);
             // 
             // txtUpdateCompany
             // 
@@ -603,29 +626,6 @@
             this.btnUpdateProveedor.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnUpdateProveedor.UseDefaultRadiusAndThickness = true;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.txtid});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(577, 27);
-            this.menuStrip1.TabIndex = 30;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
-            // 
-            // txtid
-            // 
-            this.txtid.BackColor = System.Drawing.Color.White;
-            this.txtid.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtid.ForeColor = System.Drawing.Color.White;
-            this.txtid.Name = "txtid";
-            this.txtid.ReadOnly = true;
-            this.txtid.Size = new System.Drawing.Size(76, 23);
-            // 
             // VistaActualizarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -634,6 +634,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "VistaActualizarProveedor";
             this.Text = "VistaActualizarProveedor";
+            this.Load += new System.EventHandler(this.VistaActualizarProveedor_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();

@@ -51,12 +51,9 @@ namespace AgroServicios
                 lblcodigo.ForeColor = Color.White;
                 lblname.ForeColor = Color.White;
                 lblPrecio.ForeColor = Color.White;
+                lbldesc.BackColor = Color.FromArgb(118, 88, 152);
+                lbldesc.ForeColor = Color.White;
             }
-        }
-
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

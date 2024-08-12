@@ -24,6 +24,16 @@ namespace AgroServicios.Vista.Productos1
 
         private void VistaProductos_Load(object sender, EventArgs e)
         {
+            if (ControladorIdioma.idioma == 1)
+            {
+                bunifuLabel1.Text = Ingles.LabelTitulo;
+                btnAgregarMarca.Text = Ingles.AgregarMarca;
+                btnAgregarProducto.Text = Ingles.AgregarProducto;
+                cmsEditarProducto.Text = Ingles.EditarProducto;
+                cmsElimarProducto.Text = Ingles.Eliminar;
+                cmsInformacion.Text = Ingles.Informacion;
+            }
+
             if (ControladorTema.IsDarkMode == true) 
             {
               this.BackColor = Color.Black;

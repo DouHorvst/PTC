@@ -28,6 +28,13 @@ namespace AgroServicios.Vista.Productos1
 
         private void VistaUbdateMarca_Load(object sender, EventArgs e)
         {
+            if (ControladorIdioma.idioma == 1)
+            {
+                lbCrearNuevaMarca.Text = Ingles.EditarMarca;
+                txtUbdateMarca.PlaceholderText = Ingles.NombreMarca;
+                btnUbdateMarca.Text = Ingles.Actualizar;
+            }
+
             if (ControladorTema.IsDarkMode == true)
             {
                 this.BackColor = Color.Black;

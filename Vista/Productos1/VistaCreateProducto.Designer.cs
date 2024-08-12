@@ -341,7 +341,6 @@
             // 
             // pictureBox4
             // 
-     
             this.pictureBox4.Location = new System.Drawing.Point(193, 210);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(41, 41);
@@ -393,7 +392,7 @@
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuLabel2.Location = new System.Drawing.Point(19, 130);
+            this.bunifuLabel2.Location = new System.Drawing.Point(19, 155);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(90, 21);
@@ -432,7 +431,7 @@
             this.txtDescripcion.IconRight = null;
             this.txtDescripcion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(14, 155);
+            this.txtDescripcion.Location = new System.Drawing.Point(14, 180);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.MinimumSize = new System.Drawing.Size(1, 1);

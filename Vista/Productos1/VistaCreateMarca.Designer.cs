@@ -384,6 +384,8 @@
             this.Controls.Add(this.GriewViewMarcas);
             this.Controls.Add(this.txtNombreMarca);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.MaximumSize = new System.Drawing.Size(813, 285);
+            this.MinimumSize = new System.Drawing.Size(813, 285);
             this.Name = "VistaCreateMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaCreateMarca";

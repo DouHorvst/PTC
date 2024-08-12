@@ -1,4 +1,5 @@
-﻿using AgroServicios.Controlador.CuentasContralador;
+﻿using AgroServicios.Controlador;
+using AgroServicios.Controlador.CuentasContralador;
 using AgroServicios.Controlador.Productos1;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,17 @@ namespace AgroServicios.Vista.Productos1
             bunifuGradientPanel2.GradientTopRight = Color.FromArgb(118, 88, 152);
             bunifuGradientPanel2.GradientBottomRight = Color.FromArgb(34, 36, 49);
             bunifuGradientPanel2.GradientTopLeft = Color.FromArgb(34, 36, 49);
+
+            if (ControladorIdioma.idioma == 1)
+            {
+                bunifuLabel1.Text = Ingles.ActualizarProducto;
+                txtUbdateProducto.PlaceholderText = Ingles.NombreProducto;
+                txtUbdateCantidad.PlaceholderText = Ingles.CantidadProducto;
+                txtUbdateCodigo.PlaceholderText = Ingles.Codigo;
+                txtUbdateDescripcion.PlaceholderText = Ingles.Descripcion;
+                btnUbdateImagen.Text = Ingles.EditarImagen;
+                btnUbdateProducto.Text = Ingles.Actualizar;
+            }
         }
 
         private void bunifuGradientPanel2_Click(object sender, EventArgs e)

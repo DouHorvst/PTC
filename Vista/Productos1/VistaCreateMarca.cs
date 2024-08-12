@@ -28,6 +28,16 @@ namespace AgroServicios.Vista.Productos1
 
         private void VistaCreateMarca_Load(object sender, EventArgs e)
         {
+            if (ControladorIdioma.idioma == 1)
+            {
+                lbCrearNuevaMarca.Text = Ingles.CreateMarca;
+                txtNombreMarca.Text = Ingles.NombreMarca;
+                bunifuLabel1.Text = Ingles.TablaMarcas;
+                btnIngresarMarca.Text = Ingles.Agregar;
+                cmsElimarProducto.Text = Ingles.Eliminar;
+                cmsEditarMarca.Text = Ingles.EditarDatos;
+            }
+
             if (ControladorTema.IsDarkMode == true)
             {
                 this.BackColor = Color.Black;

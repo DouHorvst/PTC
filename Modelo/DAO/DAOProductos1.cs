@@ -20,7 +20,7 @@ namespace AgroServicios.Modelo.DAO
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
                 //Instrucción que se hará hacia la base de datos
-                string query = "SELECT * FROM Productos";
+                string query = "SELECT * FROM ProductosMarcaView";
                 //Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
@@ -31,7 +31,7 @@ namespace AgroServicios.Modelo.DAO
                 //Se crea un objeto Dataset que es donde se devolverán los resultados
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
-                adp.Fill(ds, "Productos");
+                adp.Fill(ds, "ProductosMarcaView");
                 //Devolvemos el Dataset
                 return ds;
             }
@@ -55,7 +55,7 @@ namespace AgroServicios.Modelo.DAO
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
                 //Instrucción que se hará hacia la base de datos
-                string query = "SELECT * FROM Marcas";
+                string query = "SELECT * FROM ViewMarcas";
                 //Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
@@ -66,7 +66,7 @@ namespace AgroServicios.Modelo.DAO
                 //Se crea un objeto Dataset que es donde se devolverán los resultados
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
-                adp.Fill(ds, "Marcas");
+                adp.Fill(ds, "ViewMarcas");
                 //Devolvemos el Dataset
                 return ds;
             }

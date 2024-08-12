@@ -23,6 +23,18 @@ namespace AgroServicios.Vista.Productos1
 
         private void VistaCreateProducto_Load(object sender, EventArgs e)
         {
+            if (ControladorIdioma.idioma == 1)
+            {
+                bunifuLabel1.Text = Ingles.btnañadir;
+                txtNombreProducto.Text = Ingles.NombreProducto;
+                txtCodigo.Text = Ingles.Codigo;
+                txtCantidad.Text = Ingles.CantidadProducto;
+                btnImagenProducto.Text = Ingles.AgregarImagen;
+                btnCrearProducto.Text = Ingles.Agregar;
+                bunifuLabel3.Text = Ingles.Marca;
+                bunifuLabel2.Text = Ingles.Descripcion;
+            }
+
             if (ControladorTema.IsDarkMode == true)
             {
                 bunifuGradientPanel2.GradientBottomLeft = Color.FromArgb(118, 88, 152);

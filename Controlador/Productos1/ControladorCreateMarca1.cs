@@ -93,7 +93,9 @@ namespace AgroServicios.Controlador.Productos1
             //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerMarcas
             DataSet ds = dAOProductos1.ObtenerMarcas();
             ////Llenar DataGridView
-            ObjCreateMarca.GriewViewMarcas.DataSource = ds.Tables["Marcas"];
+            ObjCreateMarca.GriewViewMarcas.DataSource = ds.Tables["ViewMarcas"];
+            ObjCreateMarca.GriewViewMarcas.Columns["Imagen del producto"].Visible = false;
+            TraducirEncabezados(ObjCreateMarca.GriewViewMarcas);
         }
 
         private void EliminarMarca(object sender, EventArgs e)
@@ -114,6 +116,20 @@ namespace AgroServicios.Controlador.Productos1
                 {
                     MessageBox.Show("Eliminación fallida", "No seb ha podido eliminar la marca", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void TraducirEncabezados(DataGridView dgv)
+        {
+            if (ControladorIdioma.idioma == 1)
+            {
+                dgv.Columns["Codigo de la marca"].HeaderText = "Brand code";
+                dgv.Columns["Nombre de la marca"].HeaderText = "Brand name";
+            }
+            else
+            {
+                dgv.Columns["Codigo de la marca"].HeaderText = "Codigo de la marca";
+                dgv.Columns["Nombre de la marca"].HeaderText = "Nombre de la marca";
             }
         }
     }

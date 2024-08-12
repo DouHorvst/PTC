@@ -42,9 +42,9 @@ namespace AgroServicios.Controlador.Productos1
             //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerProductos
             DataSet ds = dAOProductos1.ObtenerProductos();
             ////Llenar DataGridView
-            ObjProductos.GriewViewProductos.DataSource = ds.Tables["ProductosMarcaView"];
+            ObjProductos.GriewViewProductos.DataSource = ds.Tables["Productos"];
 
-            ObjProductos.GriewViewProductos.Columns["Imagen del producto"].Visible = false;
+            ObjProductos.GriewViewProductos.Columns["imgNombre"].Visible = false;
             TraducirEncabezados(ObjProductos.GriewViewProductos);
         }
 
@@ -133,25 +133,25 @@ namespace AgroServicios.Controlador.Productos1
         {
             if (ControladorIdioma.idioma == 1)
             {
-                dgv.Columns["id del producto"].HeaderText = "Product id";
-                dgv.Columns["Nombre del producto"].HeaderText = "Product name";
-                dgv.Columns["Marca del producto"].HeaderText = "Product brand";
-                dgv.Columns["Precio del producto"].HeaderText = "Product price";
-                dgv.Columns["Cantidad de producto"].HeaderText = "Product quantity";
-                dgv.Columns["Descripcion del producto"].HeaderText = "Product Description";
-                dgv.Columns["Codigo del producto"].HeaderText = "Product code";
-                dgv.Columns["Imagen del producto"].HeaderText = "Product image";
+                dgv.Columns["idProducto"].HeaderText = "Product id";
+                dgv.Columns["Nombre"].HeaderText = "Product name";
+                dgv.Columns["idMarca"].HeaderText = "Product brand";
+                dgv.Columns["Precio"].HeaderText = "Product price";
+                dgv.Columns["Stock"].HeaderText = "Product quantity";
+                dgv.Columns["Descripcion"].HeaderText = "Product Description";
+                dgv.Columns["Codigo"].HeaderText = "Product code";
+                dgv.Columns["imgNombre"].HeaderText = "Product image";
             }
             else
             {
-                dgv.Columns["id del producto"].HeaderText = "id del producto";
-                dgv.Columns["Nombre del producto"].HeaderText = "Nombre del producto";
-                dgv.Columns["Marca del producto"].HeaderText = "Marca del producto";
-                dgv.Columns["Precio del producto"].HeaderText = "Precio del producto";
-                dgv.Columns["Cantidad de producto"].HeaderText = "Cantidad del producto";
-                dgv.Columns["Descripcion del producto"].HeaderText = "Descripcion del producto";
-                dgv.Columns["Codigo del producto"].HeaderText = "Codigo del producto";
-                dgv.Columns["Imagen del producto"].HeaderText = "Imagen del producto";
+                dgv.Columns["idProducto"].HeaderText = "idProducto";
+                dgv.Columns["Nombre"].HeaderText = "Nombre";
+                dgv.Columns["idMarca"].HeaderText = "idMarca";
+                dgv.Columns["Precio"].HeaderText = "Precio";
+                dgv.Columns["Stock"].HeaderText = "Stock";
+                dgv.Columns["Descripcion"].HeaderText = "Descripcion";
+                dgv.Columns["Codigo"].HeaderText = "Codigo";
+                dgv.Columns["imgNombre"].HeaderText = "imgNombre";
             }
         }
     }

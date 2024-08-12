@@ -26,9 +26,9 @@ namespace AgroServicios.Vista.Productos1
             if (ControladorIdioma.idioma == 1)
             {
                 bunifuLabel1.Text = Ingles.btnañadir;
-                txtNombreProducto.Text = Ingles.NombreProducto;
-                txtCodigo.Text = Ingles.Codigo;
-                txtCantidad.Text = Ingles.CantidadProducto;
+                txtNombreProducto.PlaceholderText = Ingles.NombreProducto;
+                txtCodigo.PlaceholderText = Ingles.Codigo;
+                txtCantidad.PlaceholderText = Ingles.CantidadProducto;
                 btnImagenProducto.Text = Ingles.AgregarImagen;
                 btnCrearProducto.Text = Ingles.Agregar;
                 bunifuLabel3.Text = Ingles.Marca;

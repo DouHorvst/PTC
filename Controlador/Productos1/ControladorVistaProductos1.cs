@@ -137,7 +137,7 @@ namespace AgroServicios.Controlador.Productos1
                 dgv.Columns["Nombre del producto"].HeaderText = "Product name";
                 dgv.Columns["Marca del producto"].HeaderText = "Product brand";
                 dgv.Columns["Precio del producto"].HeaderText = "Product price";
-                dgv.Columns["Cantidad del producto"].HeaderText = "Product quantity";
+                dgv.Columns["Cantidad de producto"].HeaderText = "Product quantity";
                 dgv.Columns["Descripcion del producto"].HeaderText = "Product Description";
                 dgv.Columns["Codigo del producto"].HeaderText = "Product code";
                 dgv.Columns["Imagen del producto"].HeaderText = "Product image";

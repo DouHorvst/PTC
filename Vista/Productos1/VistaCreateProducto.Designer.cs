@@ -341,6 +341,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = global::AgroServicios.Properties.Resources.bolsita;
             this.pictureBox4.Location = new System.Drawing.Point(193, 210);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(41, 41);

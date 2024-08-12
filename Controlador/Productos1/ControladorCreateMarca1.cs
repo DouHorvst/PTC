@@ -94,7 +94,6 @@ namespace AgroServicios.Controlador.Productos1
             DataSet ds = dAOProductos1.ObtenerMarcas();
             ////Llenar DataGridView
             ObjCreateMarca.GriewViewMarcas.DataSource = ds.Tables["ViewMarcas"];
-            ObjCreateMarca.GriewViewMarcas.Columns["Imagen del producto"].Visible = false;
             TraducirEncabezados(ObjCreateMarca.GriewViewMarcas);
         }
 

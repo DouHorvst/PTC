@@ -46,16 +46,6 @@ namespace AgroServicios.Vista.MenuPrincipal
                 lblhora.ForeColor = Color.White;
                 lblfecha.ForeColor = Color.FromArgb(68, 197, 197);
                 PanelContenedor.BackColor = Color.FromArgb(18,18,18);
-                btnprin2.IdleFillColor = Color.FromArgb(82, 208, 83);
-                btnprin1.IdleFillColor = Color.FromArgb(82, 208, 83);
-                btn1.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn2.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn3.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn4.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn5.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn6.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn7.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btn8.IdleFillColor = Color.FromArgb(118, 88, 152);
                 tableLayoutPanel1.BackColor = Color.FromArgb(230, 119, 11);
                 btnInicio.BackColor = Color.FromArgb(230, 119, 11);
                 btnShop.BackColor = Color.FromArgb(230, 119, 11);
@@ -65,6 +55,57 @@ namespace AgroServicios.Vista.MenuPrincipal
             }
         }
         private void btnConfi_Click_1(object sender, EventArgs e)
+        {
+            VistaAjustes vistaAjustes = new VistaAjustes();
+            vistaAjustes.ShowDialog();
+            this.Close();
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfi_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfi_Click_2(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
         {
             VistaAjustes vistaAjustes = new VistaAjustes();
             vistaAjustes.ShowDialog();

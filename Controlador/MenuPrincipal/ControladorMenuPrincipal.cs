@@ -31,7 +31,7 @@ namespace AgroServicios.Controlador.MenuPrincipal
             ObjMenu.btnExit.Click += new EventHandler(CerrarSesion);
             ObjMenu.btnAccounts.Click += new EventHandler(OpenCuentas);
             ObjMenu.btnShop.Click += new EventHandler(OpenCarrito);
-            ObjMenu.btnprin2.Click += new EventHandler(OpenShop);
+            ObjMenu.btnProductos.Click += new EventHandler(OpenShop);
         }
 
         private void OpenCarrito(object sender, EventArgs e)

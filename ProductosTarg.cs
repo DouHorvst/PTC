@@ -83,5 +83,10 @@ namespace AgroServicios
                 form.Dispose();
             }
         }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

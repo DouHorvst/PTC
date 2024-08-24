@@ -418,7 +418,7 @@
         TzMzMzN7GbvI/vcQBABgkN68+RvSGDmN3iw5GQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtDireccionCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtUbdateDireccionCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAYsAAAApCAYAAADEQwXaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANPSURBVHhe7d09b9NQFMZxjx0ZOzIyMnZk7IRYkBgZEZ+A
@@ -438,7 +438,7 @@
         x9UTTRvaiVBb11IURVHXp9S/gyB44Xr5mrV2AAAWwfN+AgjCQIh+sX5EAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnCrearCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnUbdateCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAITSURBVHhe7dyxaxNRHMDxu3vvQkj17hqaxkBpbaBgS0tD
@@ -453,7 +453,7 @@
         AX3cJv2LTe1bd727p9pfQfAP7tnSw0jKYzsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txtCorreoCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtUbdateCorreoCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAYsAAAApCAYAAADEQwXaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANPSURBVHhe7d09b9NQFMZxjx0ZOzIyMnZk7IRYkBgZEZ+A
@@ -473,7 +473,7 @@
         x9UTTRvaiVBb11IURVHXp9S/gyB44Xr5mrV2AAAWwfN+AgjCQIh+sX5EAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="txtNombreCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtUbdateNombreCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAYsAAAApCAYAAADEQwXaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANPSURBVHhe7d09b9NQFMZxjx0ZOzIyMnZk7IRYkBgZEZ+A
@@ -493,7 +493,7 @@
         x9UTTRvaiVBb11IURVHXp9S/gyB44Xr5mrV2AAAWwfN+AgjCQIh+sX5EAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="txtTelefonoCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtUbdateTelefonoCliente.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK4AAAApCAYAAACsuRKOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMDSURBVHhe7Z09jxJRFIan3NKS0tLSckvLrYyNiaWl8RdY
@@ -534,4 +534,7 @@
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

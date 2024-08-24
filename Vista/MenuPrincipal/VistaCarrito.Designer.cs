@@ -41,15 +41,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvCarrito = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btneliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.dgvTotal = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btneliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.dgvTotal = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbEmpleado = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
@@ -65,14 +67,15 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
+            this.bunifuPanel1.Controls.Add(this.cmbEmpleado);
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
             this.bunifuPanel1.Controls.Add(this.label1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1391, 86);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1028, 70);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -80,10 +83,9 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AgroServicios.Properties.Resources.bolsita;
-            this.pictureBox1.Location = new System.Drawing.Point(1287, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(950, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -93,10 +95,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 47);
+            this.label1.Size = new System.Drawing.Size(121, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Carrito";
             // 
@@ -157,17 +158,44 @@
             this.dgvCarrito.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvCarrito.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvCarrito.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvCarrito.Location = new System.Drawing.Point(0, 86);
-            this.dgvCarrito.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCarrito.Location = new System.Drawing.Point(0, 70);
             this.dgvCarrito.Name = "dgvCarrito";
             this.dgvCarrito.ReadOnly = true;
             this.dgvCarrito.RowHeadersVisible = false;
             this.dgvCarrito.RowHeadersWidth = 51;
             this.dgvCarrito.RowTemplate.Height = 40;
             this.dgvCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCarrito.Size = new System.Drawing.Size(1391, 362);
+            this.dgvCarrito.Size = new System.Drawing.Size(1028, 294);
             this.dgvCarrito.TabIndex = 1;
             this.dgvCarrito.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.MinimumWidth = 6;
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // PrecioUnitario
+            // 
+            this.PrecioUnitario.HeaderText = "Precio Unitario";
+            this.PrecioUnitario.MinimumWidth = 6;
+            this.PrecioUnitario.Name = "PrecioUnitario";
+            this.PrecioUnitario.ReadOnly = true;
+            // 
+            // PrecioTotal
+            // 
+            this.PrecioTotal.HeaderText = "Precio Total";
+            this.PrecioTotal.MinimumWidth = 6;
+            this.PrecioTotal.Name = "PrecioTotal";
+            this.PrecioTotal.ReadOnly = true;
             // 
             // tableLayoutPanel1
             // 
@@ -176,13 +204,12 @@
             this.tableLayoutPanel1.Controls.Add(this.btneliminar, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bunifuButton21, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 332);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 270);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1391, 116);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 94);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // btneliminar
@@ -233,8 +260,7 @@
             this.btneliminar.IdleIconLeftImage = null;
             this.btneliminar.IdleIconRightImage = null;
             this.btneliminar.IndicateFocus = false;
-            this.btneliminar.Location = new System.Drawing.Point(366, 63);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btneliminar.Location = new System.Drawing.Point(267, 51);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btneliminar.OnDisabledState.BorderRadius = 20;
@@ -268,7 +294,7 @@
             this.btneliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btneliminar.OnPressedState.IconLeftImage = null;
             this.btneliminar.OnPressedState.IconRightImage = null;
-            this.btneliminar.Size = new System.Drawing.Size(659, 48);
+            this.btneliminar.Size = new System.Drawing.Size(494, 39);
             this.btneliminar.TabIndex = 1;
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btneliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -324,8 +350,7 @@
             this.bunifuButton21.IdleIconLeftImage = null;
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.IndicateFocus = false;
-            this.bunifuButton21.Location = new System.Drawing.Point(367, 5);
-            this.bunifuButton21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton21.Location = new System.Drawing.Point(268, 4);
             this.bunifuButton21.Name = "bunifuButton21";
             this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.OnDisabledState.BorderRadius = 20;
@@ -359,7 +384,7 @@
             this.bunifuButton21.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton21.OnPressedState.IconLeftImage = null;
             this.bunifuButton21.OnPressedState.IconRightImage = null;
-            this.bunifuButton21.Size = new System.Drawing.Size(656, 48);
+            this.bunifuButton21.Size = new System.Drawing.Size(492, 39);
             this.bunifuButton21.TabIndex = 0;
             this.bunifuButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton21.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -421,7 +446,8 @@
             this.dgvTotal.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvTotal.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvTotal.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvTotal.Location = new System.Drawing.Point(0, 215);
+            this.dgvTotal.Location = new System.Drawing.Point(0, 175);
+            this.dgvTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvTotal.Name = "dgvTotal";
             this.dgvTotal.ReadOnly = true;
             this.dgvTotal.RowHeadersVisible = false;
@@ -429,37 +455,9 @@
             this.dgvTotal.RowTemplate.Height = 40;
             this.dgvTotal.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgvTotal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTotal.Size = new System.Drawing.Size(1391, 117);
+            this.dgvTotal.Size = new System.Drawing.Size(1028, 95);
             this.dgvTotal.TabIndex = 3;
             this.dgvTotal.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 6;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // PrecioUnitario
-            // 
-            this.PrecioUnitario.HeaderText = "Precio Unitario";
-            this.PrecioUnitario.MinimumWidth = 6;
-            this.PrecioUnitario.Name = "PrecioUnitario";
-            this.PrecioUnitario.ReadOnly = true;
-            // 
-            // PrecioTotal
-            // 
-            this.PrecioTotal.HeaderText = "Precio Total";
-            this.PrecioTotal.MinimumWidth = 6;
-            this.PrecioTotal.Name = "PrecioTotal";
-            this.PrecioTotal.ReadOnly = true;
             // 
             // Total
             // 
@@ -468,16 +466,75 @@
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
             // 
+            // cmbEmpleado
+            // 
+            this.cmbEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEmpleado.BackgroundColor = System.Drawing.Color.White;
+            this.cmbEmpleado.BorderColor = System.Drawing.Color.Silver;
+            this.cmbEmpleado.BorderRadius = 1;
+            this.cmbEmpleado.Color = System.Drawing.Color.Silver;
+            this.cmbEmpleado.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmbEmpleado.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbEmpleado.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmbEmpleado.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbEmpleado.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmbEmpleado.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbEmpleado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbEmpleado.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEmpleado.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbEmpleado.FillDropDown = true;
+            this.cmbEmpleado.FillIndicator = false;
+            this.cmbEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbEmpleado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbEmpleado.ForeColor = System.Drawing.Color.Black;
+            this.cmbEmpleado.FormattingEnabled = true;
+            this.cmbEmpleado.Icon = null;
+            this.cmbEmpleado.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbEmpleado.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbEmpleado.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbEmpleado.IndicatorThickness = 2;
+            this.cmbEmpleado.IsDropdownOpened = false;
+            this.cmbEmpleado.ItemBackColor = System.Drawing.Color.White;
+            this.cmbEmpleado.ItemBorderColor = System.Drawing.Color.White;
+            this.cmbEmpleado.ItemForeColor = System.Drawing.Color.Black;
+            this.cmbEmpleado.ItemHeight = 26;
+            this.cmbEmpleado.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmbEmpleado.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmbEmpleado.ItemTopMargin = 3;
+            this.cmbEmpleado.Location = new System.Drawing.Point(564, 21);
+            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEmpleado.Name = "cmbEmpleado";
+            this.cmbEmpleado.Size = new System.Drawing.Size(196, 32);
+            this.cmbEmpleado.TabIndex = 4;
+            this.cmbEmpleado.Text = null;
+            this.cmbEmpleado.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbEmpleado.TextLeftMargin = 5;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(453, 24);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(104, 23);
+            this.bunifuLabel1.TabIndex = 5;
+            this.bunifuLabel1.Text = "Empleados";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // VistaCarrito
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1391, 448);
+            this.ClientSize = new System.Drawing.Size(1028, 364);
             this.Controls.Add(this.dgvTotal);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dgvCarrito);
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VistaCarrito";
             this.Text = "VistaCarrito";
             this.bunifuPanel1.ResumeLayout(false);
@@ -505,5 +562,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnitario;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        public Bunifu.UI.WinForms.BunifuDropdown cmbEmpleado;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }

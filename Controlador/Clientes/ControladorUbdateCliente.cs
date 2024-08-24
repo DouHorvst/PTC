@@ -32,6 +32,7 @@ namespace AgroServicios.Controlador.Clientes
                 Objupdate.btnUbdateCliente.Enabled = false;
                 Objupdate.txtUbdateNombreCliente.Enabled = false;
                 Objupdate.txtUbdateCorreoCliente.Enabled = false;
+                Objupdate.txtUbdateTelefonoCliente.Enabled = false;
                 Objupdate.txtUbdateDireccionCliente.Enabled = false;
             }
         }
@@ -52,8 +53,8 @@ namespace AgroServicios.Controlador.Clientes
                 string.IsNullOrWhiteSpace(Objupdate.txtUbdateCorreoCliente.Text) ||
                 string.IsNullOrWhiteSpace(Objupdate.txtUbdateDireccionCliente.Text))
             {
-                MessageBox.Show("Error al actualizar el codigo del producto",
-                                "Error de validación",
+                MessageBox.Show("Se han dejado espacios sin llenar",
+                                "Error de actualización",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
                 return;

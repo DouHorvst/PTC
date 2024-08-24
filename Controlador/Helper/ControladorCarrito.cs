@@ -1,6 +1,7 @@
 ﻿using AgroServicios.Vista.MenuPrincipal;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace AgroServicios.Controlador.Helper
         public ControladorCarrito(VistaCarrito vistaCarrito)
         {
             objCarrito = vistaCarrito;
+            objCarrito.Load += ChargeValue;
             objCarrito.btneliminar.Click += Borrarcompra;
         }
 
@@ -76,5 +78,32 @@ namespace AgroServicios.Controlador.Helper
 
         }
 
+        private void ChargeValue(object sender, EventArgs e)
+        {
+            LlenarTextBox();
+            LlenarEmpleado();
+        }
+
+        void LlenarTextBox()
+        {
+            DAOCarrito dao = new DAOCarrito();
+
+            DataSet ds = dao.LlenarCombo();
+
+            objCarrito.cmbCliente.DataSource = ds.Tables["Clientes"];
+            objCarrito.cmbCliente.ValueMember = "idCliente";
+            objCarrito.cmbCliente.DisplayMember = "Nombre";
+
+        }
+        void LlenarEmpleado()
+        {
+            DAOCarrito dao = new DAOCarrito();
+
+            DataSet ds = dao.LlenarCombo();
+
+            objCarrito.cmbEmpleado.DataSource = ds.Tables["Empleados"];
+            objCarrito.cmbEmpleado.ValueMember = "idEmpleado";
+            objCarrito.cmbEmpleado.DisplayMember = "Nombre";
+        }
     }
 }

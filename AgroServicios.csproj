@@ -376,6 +376,9 @@
     <EmbeddedResource Include="Vista\Clientes\VistaCreateCliente.resx">
       <DependentUpon>VistaCreateCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Clientes\VistaUbdateCliente.resx">
+      <DependentUpon>VistaUbdateCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Cuentas\CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>

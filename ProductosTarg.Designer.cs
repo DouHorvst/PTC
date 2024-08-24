@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductosTarg));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.ptbimg = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -69,7 +69,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(468, 249);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(68, 22);
             this.numericUpDown1.TabIndex = 9;
@@ -102,7 +102,7 @@
             this.lbldesc.Name = "lbldesc";
             this.lbldesc.ReadOnly = true;
             this.lbldesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.lbldesc.Size = new System.Drawing.Size(217, 96);
+            this.lbldesc.Size = new System.Drawing.Size(265, 96);
             this.lbldesc.TabIndex = 7;
             this.lbldesc.Text = "";
             // 
@@ -125,11 +125,11 @@
             this.btnadd.ColorContrastOnClick = 45;
             this.btnadd.ColorContrastOnHover = 45;
             this.btnadd.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnadd.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnadd.CustomizableEdges = borderEdges3;
             this.btnadd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnadd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnadd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -251,7 +251,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(8, 15, 8, 15);
+            this.Margin = new System.Windows.Forms.Padding(55, 15, 0, 15);
             this.Name = "ProductosTarg";
             this.Size = new System.Drawing.Size(583, 292);
             this.Load += new System.EventHandler(this.ProductosTarg_Load);

@@ -20,6 +20,7 @@ namespace AgroServicios.Controlador.ControladorStats
             ObjStats = Estadisticas;
             ObjStats.btnProveedores.Click += new EventHandler(OpenProveedores);
             ObjStats.btnSuministros.Click += new EventHandler(OpenSuministros);
+            ObjStats.btnHistorial.Click += OpenHistorialVentas;
         }
 
         private void OpenSuministros(object sender, EventArgs e)
@@ -31,6 +32,11 @@ namespace AgroServicios.Controlador.ControladorStats
         {
             VistaProveedores vistaProveedores = new VistaProveedores();
             vistaProveedores.ShowDialog();
+        }
+        private void OpenHistorialVentas(object sender, EventArgs e)
+        {
+            VistaHistorialVenta vista = new VistaHistorialVenta();
+            vista.ShowDialog();
         }
     }
 }

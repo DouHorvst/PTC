@@ -99,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controlador\Busqueda\ControladorBusqueda.cs" />
+    <Compile Include="Controlador\Clientes\ControladorCreateCliente.cs" />
+    <Compile Include="Controlador\Clientes\ControladorUbdateCliente.cs" />
+    <Compile Include="Controlador\Clientes\ControladorVistaClientes.cs" />
     <Compile Include="Controlador\ControladorIdioma.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorActualizarProveedor.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorCrearProveedor.cs" />
@@ -127,6 +130,7 @@
     <Compile Include="Controlador\Productos1\ControladorUbdateProducto1.cs" />
     <Compile Include="Controlador\Productos1\ControladorVistaProductos1.cs" />
     <Compile Include="Modelo\DAO\DAOAdminUsers.cs" />
+    <Compile Include="Modelo\DAO\DAOClientes.cs" />
     <Compile Include="Modelo\DAO\DAOCorreoRecuperacion.cs" />
     <Compile Include="Modelo\DAO\DAODCSoporte.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
@@ -137,6 +141,7 @@
     <Compile Include="Modelo\DAO\DAOTargproductos.cs" />
     <Compile Include="Modelo\dbContext.cs" />
     <Compile Include="Modelo\DTO\DTOAdminUsers.cs" />
+    <Compile Include="Modelo\DTO\DTOClientes.cs" />
     <Compile Include="Modelo\DTO\DTOCorreoRecuperacion.cs" />
     <Compile Include="Modelo\DTO\DTOLogin.cs" />
     <Compile Include="Modelo\DTO\DTOPreguntasRec.cs" />
@@ -166,6 +171,24 @@
     </Compile>
     <Compile Include="Vista\Busqueda\VistaBusqueda.Designer.cs">
       <DependentUpon>VistaBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaClientes.Designer.cs">
+      <DependentUpon>VistaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaCreateCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaCreateCliente.Designer.cs">
+      <DependentUpon>VistaCreateCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaUbdateCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\VistaUbdateCliente.Designer.cs">
+      <DependentUpon>VistaUbdateCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Cuentas\CreateUser.cs">
       <SubType>Form</SubType>
@@ -346,6 +369,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Busqueda\VistaBusqueda.resx">
       <DependentUpon>VistaBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Clientes\VistaClientes.resx">
+      <DependentUpon>VistaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Clientes\VistaCreateCliente.resx">
+      <DependentUpon>VistaCreateCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Cuentas\CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
@@ -562,6 +591,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\turn-left_11044726.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cojita logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cojita logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cajita logo3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

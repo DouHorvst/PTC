@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AgroServicios.Modelo.DTO;
 using System.Security.Cryptography.X509Certificates;
+using System.Windows.Forms;
 
 namespace AgroServicios.Modelo.DAO
 {
@@ -118,6 +119,33 @@ namespace AgroServicios.Modelo.DAO
             {
                 Command.Connection.Close();
             }
+        }
+
+        public DataTable BuscarProveedor(string criterio)
+        {
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                Command.Connection = getConnection();
+                Command.CommandText = "SELECT * FROM Proveedores WHERE Nombre LIKE @criterio";
+                Command.Parameters.Clear();
+                Command.Parameters.AddWithValue("@criterio", "%" + criterio + "%");
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(Command);
+                dataAdapter.Fill(dataTable);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+
+            return dataTable;
         }
     }
 }

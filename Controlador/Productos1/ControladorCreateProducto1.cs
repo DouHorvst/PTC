@@ -77,6 +77,8 @@ namespace AgroServicios.Controlador.Productos1
 
         public void NuevoRegistro(object sender, EventArgs e)
         {
+            int value;
+            decimal value2;
             // Validar que los campos no estén vacíos
             if (string.IsNullOrWhiteSpace(ObjCreateProducto1.txtNombreProducto.Text) ||
                 string.IsNullOrWhiteSpace(ObjCreateProducto1.txtCodigo.Text) ||
@@ -104,6 +106,17 @@ namespace AgroServicios.Controlador.Productos1
                 MemoryStream ms = new MemoryStream();
                 imagen.Save(ms, ImageFormat.Jpeg);
                 imageBytes = ms.ToArray();
+            }
+
+            if (!int.TryParse(ObjCreateProducto1.txtCodigo.Text, out value) ||
+                !int.TryParse(ObjCreateProducto1.txtCantidad.Text, out value))
+            {
+                MessageBox.Show("Ingrese unicamente en el codigo y en la cantidad numeros enteros", "Error al ingresa el codigo y la cantidad del producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (!decimal.TryParse(ObjCreateProducto1.txtPrecio.Text, out value2)) 
+            {
+                MessageBox.Show("Ingrese unicamente en el precio solo numeros decimales", "Error al ingresar el precio del producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             DAOProductos1 DaoInsert = new DAOProductos1();

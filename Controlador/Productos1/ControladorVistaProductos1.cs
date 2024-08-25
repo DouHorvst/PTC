@@ -22,6 +22,7 @@ namespace AgroServicios.Controlador.Productos1
         {
             ObjProductos = objProductos;
             ObjProductos.Load += new EventHandler(LoadData);
+            ObjProductos.txtBuscar.KeyPress += new KeyPressEventHandler(BuscarProducto_KeyPress);
             //Evento click de botones
             ObjProductos.btnAgregarProducto.Click += new EventHandler(NuevoProducto);
             ObjProductos.btnAgregarMarca.Click += new EventHandler(NuevaMarca);
@@ -125,6 +126,21 @@ namespace AgroServicios.Controlador.Productos1
                 {
                     MessageBox.Show("Eliminación fallida", "No seb ha podido eliminar el producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void BuscarProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                string criterio = ObjProductos.txtBuscar.Text.Trim();
+                DAOAdminUsers daoBuscar = new DAOAdminUsers();
+                DataTable dataTable = daoBuscar.BuscarProducto(criterio);
+                ObjProductos.GriewViewProductos.DataSource = dataTable;
+                ObjProductos.GriewViewProductos.Columns["imgNombre"].Visible = false;
+                ObjProductos.GriewViewProductos.Columns["idProducto"].Visible = false;
+                // Prevenir el sonido de "ding"
+                e.Handled = true;
             }
         }
     }

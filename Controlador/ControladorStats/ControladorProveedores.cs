@@ -24,6 +24,7 @@ namespace AgroServicios.Controlador.ControladorStats
         {
             ObjProv = Proveedores;
             ObjProv.btnAgregarProv.Click += new EventHandler(OpenVistaAgregarProveedores);
+            ObjProv.txtBuscar.KeyPress += new KeyPressEventHandler(BuscarProducto_KeyPress);
             ObjProv.Load += new EventHandler(LoadData);
             //
             ObjProv.cmsEliminar.Click += new EventHandler(DeleteProv);
@@ -105,6 +106,19 @@ namespace AgroServicios.Controlador.ControladorStats
                 dgv.Columns["Teléfono"].HeaderText = "Teléfono";
                 dgv.Columns["Correo"].HeaderText = "Correo";
                 dgv.Columns["Empresa"].HeaderText = "Empresa";
+            }
+        }
+        private void BuscarProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                string criterio = ObjProv.txtBuscar.Text.Trim();
+                DAOProveedores daoBuscar = new DAOProveedores();
+                DataTable dataTable = daoBuscar.BuscarProveedor(criterio);
+                ObjProv.GriewProveedores.DataSource = dataTable;
+                ObjProv.GriewProveedores.Columns["idProveedor"].Visible = false;
+                // Prevenir el sonido de "ding"
+                e.Handled = true;
             }
         }
     }

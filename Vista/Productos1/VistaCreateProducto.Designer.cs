@@ -514,7 +514,7 @@
             this.txtPrecio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrecio.DefaultFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.DefaultText = "$";
+            this.txtPrecio.DefaultText = "";
             this.txtPrecio.FillColor = System.Drawing.Color.White;
             this.txtPrecio.HideSelection = true;
             this.txtPrecio.IconLeft = null;
@@ -522,8 +522,7 @@
             this.txtPrecio.IconPadding = 10;
             this.txtPrecio.IconRight = null;
             this.txtPrecio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrecio.Lines = new string[] {
-        "$"};
+            this.txtPrecio.Lines = new string[0];
             this.txtPrecio.Location = new System.Drawing.Point(239, 269);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.MaxLength = 32767;

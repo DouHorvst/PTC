@@ -69,7 +69,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(468, 249);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(68, 22);
             this.numericUpDown1.TabIndex = 9;
@@ -96,13 +96,14 @@
             // 
             this.lbldesc.BackColor = System.Drawing.Color.White;
             this.lbldesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbldesc.Enabled = false;
             this.lbldesc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldesc.Location = new System.Drawing.Point(271, 130);
             this.lbldesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbldesc.Name = "lbldesc";
             this.lbldesc.ReadOnly = true;
             this.lbldesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.lbldesc.Size = new System.Drawing.Size(217, 96);
+            this.lbldesc.Size = new System.Drawing.Size(265, 96);
             this.lbldesc.TabIndex = 7;
             this.lbldesc.Text = "";
             // 
@@ -251,7 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(8, 15, 8, 15);
+            this.Margin = new System.Windows.Forms.Padding(55, 15, 0, 15);
             this.Name = "ProductosTarg";
             this.Size = new System.Drawing.Size(583, 292);
             this.Load += new System.EventHandler(this.ProductosTarg_Load);

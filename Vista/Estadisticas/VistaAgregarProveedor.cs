@@ -30,7 +30,6 @@ namespace AgroServicios.Vista.Estadisticas
                 txtNewID.PlaceholderText = Ingles.txtDUI;
                 txtNewPhone.PlaceholderText = Ingles.txtTe;
                 txtNewCorreo.PlaceholderText = Ingles.txtCR;
-                txtNewCompany.PlaceholderText = Ingles.txtEM;
                 btnAgregarProv.Text = Ingles.btnAP;      
             }
             if (ControladorTema.IsDarkMode == true)

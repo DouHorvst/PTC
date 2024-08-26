@@ -319,7 +319,6 @@
             this.GriewViewMarcas.EnableHeadersVisualStyles = false;
             this.GriewViewMarcas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.GriewViewMarcas.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.GriewViewMarcas.HeaderBgColor = System.Drawing.Color.Empty;
             this.GriewViewMarcas.HeaderForeColor = System.Drawing.Color.White;
             this.GriewViewMarcas.Location = new System.Drawing.Point(532, 107);
             this.GriewViewMarcas.Margin = new System.Windows.Forms.Padding(2);

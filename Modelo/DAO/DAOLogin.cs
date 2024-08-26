@@ -19,7 +19,7 @@ namespace AgroServicios.Modelo.DAO
 
                 // Define la consulta SQL para seleccionar el usuario, idCategoria y nombre de la vista
                 // Utiliza COLLATE para hacer que la comparación de Usuario y Contraseña sea sensible a mayúsculas y minúsculas
-                Command.CommandText = "SELECT Usuario, idCategoria, Nombre, picprofile FROM VistaUsuariosCategorias WHERE Usuario COLLATE SQL_Latin1_General_CP1_CS_AS = @username AND Contraseña = @password COLLATE SQL_Latin1_General_CP1_CS_AS";
+                Command.CommandText = "SELECT idEmpleado, Usuario, idCategoria, Nombre ,picprofile FROM VistaUsuariosCategoriasV2 WHERE Usuario COLLATE SQL_Latin1_General_CP1_CS_AS = @username AND Contraseña COLLATE SQL_Latin1_General_CP1_CS_AS = @password";
 
                 // Limpia cualquier parámetro existente en el objeto Command
                 Command.Parameters.Clear();
@@ -38,9 +38,10 @@ namespace AgroServicios.Modelo.DAO
                         while (rd.Read())
                         {
                             // Asigna los valores leídos a las variables de sesión estáticas
-                            StaticSession.Username = rd.GetString(0); // Usuario
-                            StaticSession.IdCategoria = rd.GetInt32(1); // idCategoria
-                            StaticSession.Categorianame1 = rd.GetString(2); // Nombre de la categoría
+                            StaticSession.Id = rd.GetInt32(0);
+                            StaticSession.Username = rd.GetString(1); // Usuario
+                            StaticSession.IdCategoria = rd.GetInt32(2); // idCategoria
+                            StaticSession.Categorianame1 = rd.GetString(3); // Nombre de la categoría
                             StaticSession.Picture = rd["picprofile"] as byte[]; // Imagen del usuario
 
                         }

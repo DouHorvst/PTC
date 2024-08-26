@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using AgroServicios.Controlador.Helper;
+﻿using AgroServicios.Controlador.Helper;
 using AgroServicios.Modelo.DAO;
 using AgroServicios.Vista.Cuentas;
 using AgroServicios.Vista.Login;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System;
+using System.Data;
+using System.Windows.Forms;
 
 namespace AgroServicios.Controlador.CuentasContralador
 {
@@ -25,10 +18,28 @@ namespace AgroServicios.Controlador.CuentasContralador
             ObjEmpleados.Load += new EventHandler(LoadData);
             ObjEmpleados.btnAgregar.Click += new EventHandler(OpenFormCreateUser);
             ObjEmpleados.cmsEliminar.Click += new EventHandler(EliminarEmpleado);
-            ObjEmpleados.cmsUpdate.Click += new EventHandler (UpdateEmpleado);
+            ObjEmpleados.cmsUpdate.Click += new EventHandler(UpdateEmpleado);
             ObjEmpleados.cmsRestablecer.Click += new EventHandler(RestEmpleado);
             ObjEmpleados.cmsinfo.Click += new EventHandler(Infoempleado);
             ObjEmpleados.cmsPreguntas.Click += new EventHandler(PreguntasEmp);
+            ObjEmpleados.txtBuscarP.KeyPress += new KeyPressEventHandler(Search);
+        }
+        private void Search(object sender, KeyPressEventArgs e)
+        {
+            // Verifica que la tecla presionada sea Enter antes de buscar
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                BuscarEmpleado();
+                e.Handled = true;
+            }
+        }
+        void BuscarEmpleado()
+        {
+            DAOAdminUsers objAdmin = new DAOAdminUsers();
+            //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerPersonas
+            DataSet ds = objAdmin.BuscarPersonas(ObjEmpleados.txtBuscarP.Text.Trim());
+            //Llenar DataGridView
+            ObjEmpleados.GriewEmpleados.DataSource = ds.Tables["VistaEmpleadosConRol"];
         }
 
         private void PreguntasEmp(object sender, EventArgs e)
@@ -110,10 +121,10 @@ namespace AgroServicios.Controlador.CuentasContralador
                 case "Manager":
                     break;
                 case "Empleado":
-                ObjEmpleados.btnAgregar.Enabled = false;
-                ObjEmpleados.cmsEliminar.Enabled = false;
-                ObjEmpleados.cmsRestablecer.Enabled = false;
-                ObjEmpleados.cmsUpdate.Enabled = false;
+                    ObjEmpleados.btnAgregar.Enabled = false;
+                    ObjEmpleados.cmsEliminar.Enabled = false;
+                    ObjEmpleados.cmsRestablecer.Enabled = false;
+                    ObjEmpleados.cmsUpdate.Enabled = false;
                     break;
                 default:
                     break;
@@ -173,7 +184,7 @@ namespace AgroServicios.Controlador.CuentasContralador
         {
             int pos = ObjEmpleados.GriewEmpleados.CurrentRow.Index;
 
-            if (MessageBox.Show($"¿Seguro que deseas eliminar a: \n {ObjEmpleados.GriewEmpleados[1, pos].Value.ToString()}\nLa eliminación sera permanente.","Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show($"¿Seguro que deseas eliminar a: \n {ObjEmpleados.GriewEmpleados[1, pos].Value.ToString()}\nLa eliminación sera permanente.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 DAOAdminUsers daodelete = new DAOAdminUsers();
                 daodelete.IdEmpleado = int.Parse(ObjEmpleados.GriewEmpleados[0, pos].Value.ToString());

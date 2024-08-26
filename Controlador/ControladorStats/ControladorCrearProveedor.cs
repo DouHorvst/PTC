@@ -20,14 +20,26 @@ namespace AgroServicios.Controlador.ControladorStats
         {
             ObjProveedor = vista;
             ObjProveedor.btnAgregarProv.Click += new EventHandler(AgregarProveedor);
+            ObjProveedor.Load += CargaInicial;
         }
+
+        public void CargaInicial(object sender, EventArgs e)
+        {
+            DAOProductos1 objmarcas = new DAOProductos1();
+            //Declarando nuevo DataSet para que obtenga los datos del metodo LlenarCombo
+            DataSet ds = objmarcas.LlenarCombo();
+            //Llenar combobox tbRole
+            ObjProveedor.cmbMarca.DataSource = ds.Tables["Marcas"];
+            ObjProveedor.cmbMarca.ValueMember = "idMarca";
+            ObjProveedor.cmbMarca.DisplayMember = "NombreMarca";
+        }
+
         public void AgregarProveedor (object sender, EventArgs e) 
         {
             if (string.IsNullOrWhiteSpace(ObjProveedor.txtNewFirstName.Text) ||
                 string.IsNullOrWhiteSpace(ObjProveedor.txtNewID.Text) ||
                 string.IsNullOrWhiteSpace(ObjProveedor.txtNewPhone.Text) ||
-                string.IsNullOrWhiteSpace(ObjProveedor.txtNewCorreo.Text) ||
-                string.IsNullOrWhiteSpace(ObjProveedor.txtNewCompany.Text)) 
+                string.IsNullOrWhiteSpace(ObjProveedor.txtNewCorreo.Text))
                 
             {
                 MessageBox.Show("Todos los campos son obligatorios.",
@@ -68,7 +80,7 @@ namespace AgroServicios.Controlador.ControladorStats
             DAOinsert.DUI1 = ObjProveedor.txtNewID.Text.Trim();
             DAOinsert.Teléfono1 = ObjProveedor.txtNewPhone.Text.Trim();
             DAOinsert.Correo1 = ObjProveedor.txtNewCorreo.Text.Trim();
-            DAOinsert.Empresa1 = ObjProveedor.txtNewCompany.Text.Trim();
+            DAOinsert.Marca1 = int.Parse(ObjProveedor.cmbMarca.SelectedValue.ToString());
 
             verificacion = ValidarCorreo();
             if (verificacion == true)

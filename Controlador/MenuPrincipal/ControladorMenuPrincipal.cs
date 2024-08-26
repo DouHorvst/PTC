@@ -79,6 +79,8 @@ namespace AgroServicios.Controlador.MenuPrincipal
             StaticSession.Categorianame1 = string.Empty;
             StaticSession.IdCategoria = 0;
             StaticSession.Username = string.Empty;
+            // Usar el método ResetInstance para limpiar la instancia de VistaCarrito
+            VistaCarrito.ResetInstance();
         }
 
         private void AbrirPanel<MiForm>() where MiForm : Form, new()

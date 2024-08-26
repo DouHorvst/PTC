@@ -36,11 +36,20 @@
     <Reference Include="AltoControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\AltoControls.1.0.1\lib\AltoControls.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.Licensing.6.0.2\lib\net48\Bunifu.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.7.0.0\lib\net48\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itextsharp.xmlworker.5.5.13.4\lib\net461\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -102,6 +111,7 @@
     <Compile Include="Controlador\ControladorIdioma.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorActualizarProveedor.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorCrearProveedor.cs" />
+    <Compile Include="Controlador\ControladorStats\ControladorHistorialVenta.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorProveedores.cs" />
     <Compile Include="Controlador\ControladorStats\ControladorStats.cs" />
     <Compile Include="Controlador\ControladorTema.cs" />
@@ -127,8 +137,10 @@
     <Compile Include="Controlador\Productos1\ControladorUbdateProducto1.cs" />
     <Compile Include="Controlador\Productos1\ControladorVistaProductos1.cs" />
     <Compile Include="Modelo\DAO\DAOAdminUsers.cs" />
+    <Compile Include="Modelo\DAO\DAOCarrito.cs" />
     <Compile Include="Modelo\DAO\DAOCorreoRecuperacion.cs" />
     <Compile Include="Modelo\DAO\DAODCSoporte.cs" />
+    <Compile Include="Modelo\DAO\DAOHistorialVenta.cs" />
     <Compile Include="Modelo\DAO\DAOLogin.cs" />
     <Compile Include="Modelo\DAO\DAOPreguntasRec.cs" />
     <Compile Include="Modelo\DAO\DAOProductos1.cs" />
@@ -137,6 +149,7 @@
     <Compile Include="Modelo\DAO\DAOTargproductos.cs" />
     <Compile Include="Modelo\dbContext.cs" />
     <Compile Include="Modelo\DTO\DTOAdminUsers.cs" />
+    <Compile Include="Modelo\DTO\DTOCarrito.cs" />
     <Compile Include="Modelo\DTO\DTOCorreoRecuperacion.cs" />
     <Compile Include="Modelo\DTO\DTOLogin.cs" />
     <Compile Include="Modelo\DTO\DTOPreguntasRec.cs" />
@@ -202,6 +215,12 @@
     </Compile>
     <Compile Include="Vista\Estadisticas\VistaAgregarProveedor.Designer.cs">
       <DependentUpon>VistaAgregarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaHistorialVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Estadisticas\VistaHistorialVenta.Designer.cs">
+      <DependentUpon>VistaHistorialVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Estadisticas\VistaProveedores.cs">
       <SubType>Form</SubType>
@@ -364,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Estadisticas\VistaAgregarProveedor.resx">
       <DependentUpon>VistaAgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Estadisticas\VistaHistorialVenta.resx">
+      <DependentUpon>VistaHistorialVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Estadisticas\VistaProveedores.resx">
       <DependentUpon>VistaProveedores.cs</DependentUpon>
@@ -562,6 +584,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\turn-left_11044726.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factura_Plantilla.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

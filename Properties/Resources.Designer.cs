@@ -181,6 +181,33 @@ namespace AgroServicios.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;es&quot;&gt;
+        ///&lt;head&gt;
+        ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
+        ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        ///    &lt;title&gt;Factura&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        body {
+        ///            font-family: Arial, sans-serif;
+        ///            margin: 0;
+        ///            padding: 20px;
+        ///        }
+        ///        .header {
+        ///            background-color: #40E0D0;
+        ///            color: black;
+        ///            padding: 10px;
+        ///            display: flex;
+        ///            justify-content: space-between;
+        ///            a [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Factura_Plantilla {
+            get {
+                return ResourceManager.GetString("Factura_Plantilla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Group {

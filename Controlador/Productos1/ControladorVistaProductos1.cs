@@ -28,8 +28,25 @@ namespace AgroServicios.Controlador.Productos1
             ObjProductos.cmsElimarProducto.Click += new EventHandler(EliminarProducto);
             ObjProductos.cmsEditarProducto.Click += new EventHandler(EditarProducto);
             ObjProductos.cmsInformacion.Click += new EventHandler(InformacionProducto);
+            objProductos.txtBuscarP.KeyPress += new KeyPressEventHandler(Search);
         }
-
+        private void Search(object sender, KeyPressEventArgs e)
+        {
+            // Verifica que la tecla presionada sea Enter antes de buscar
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                BuscarPro();
+                e.Handled = true;
+            }
+        }
+        void BuscarPro()
+        {
+           DAOProductos1 dao = new DAOProductos1();
+            //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerPersonas
+            DataSet ds = dao.BuscarProducto(ObjProductos.txtBuscarP.Text.Trim());
+            //Llenar DataGridView
+            ObjProductos.GriewViewProductos.DataSource = ds.Tables["Productos"];
+        }
         public void LoadData(object sender, EventArgs e)
         {
             RefrescarData();

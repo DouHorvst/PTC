@@ -609,11 +609,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHistorial;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRegistroVentas;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnProveedores;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSuministros;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnHistorial;
     }
 }

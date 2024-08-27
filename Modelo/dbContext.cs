@@ -21,8 +21,8 @@ namespace AgroServicios.Modelo
                 string Password = "MichI#12@3";
                 SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; User Id = {userId}; Password = {Password}");
 
-                //string server = "DESKTOP-QR03KRF";
-                //string database = "dbGnosis";
+                //string server = "AYALA\\SQLEXPRESS";
+                //string database = "Base_de_datos_Agro";
                 //SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; Integrated Security = true");
                 conexion.Open();
                 return conexion;

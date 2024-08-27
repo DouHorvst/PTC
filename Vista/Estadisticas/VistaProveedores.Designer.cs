@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaProveedores));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -38,21 +37,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaProveedores));
             this.contextGriewProveedores = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtBuscarP = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAgregarProv = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.GriewProveedores = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextGriewProveedores.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GriewProveedores)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextGriewProveedores
@@ -62,14 +62,14 @@
             this.cmsEliminar,
             this.cmsActualizar});
             this.contextGriewProveedores.Name = "contextMenuStrip1";
-            this.contextGriewProveedores.Size = new System.Drawing.Size(149, 56);
+            this.contextGriewProveedores.Size = new System.Drawing.Size(131, 56);
             this.contextGriewProveedores.Opening += new System.ComponentModel.CancelEventHandler(this.contextGriewProveedores_Opening);
             // 
             // cmsEliminar
             // 
             this.cmsEliminar.Image = global::AgroServicios.Properties.Resources.borrar;
             this.cmsEliminar.Name = "cmsEliminar";
-            this.cmsEliminar.Size = new System.Drawing.Size(148, 26);
+            this.cmsEliminar.Size = new System.Drawing.Size(130, 26);
             this.cmsEliminar.Text = "Eliminar";
             this.cmsEliminar.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -77,51 +77,18 @@
             // 
             this.cmsActualizar.Image = global::AgroServicios.Properties.Resources.actualizar;
             this.cmsActualizar.Name = "cmsActualizar";
-            this.cmsActualizar.Size = new System.Drawing.Size(148, 26);
+            this.cmsActualizar.Size = new System.Drawing.Size(130, 26);
             this.cmsActualizar.Text = "Actualizar";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1383, 76);
+            this.panel1.Size = new System.Drawing.Size(1028, 100);
             this.panel1.TabIndex = 3;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnAgregarProv, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1383, 76);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.txtBuscarP, 0, 1);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(417, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(685, 70);
-            this.tableLayoutPanel2.TabIndex = 28;
             // 
             // txtBuscarP
             // 
@@ -155,7 +122,8 @@
             this.txtBuscarP.IconRight = null;
             this.txtBuscarP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscarP.Lines = new string[0];
-            this.txtBuscarP.Location = new System.Drawing.Point(3, 13);
+            this.txtBuscarP.Location = new System.Drawing.Point(390, 36);
+            this.txtBuscarP.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarP.MaxLength = 32767;
             this.txtBuscarP.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscarP.Modified = false;
@@ -181,7 +149,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscarP.OnIdleState = stateProperties4;
-            this.txtBuscarP.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBuscarP.Padding = new System.Windows.Forms.Padding(2);
             this.txtBuscarP.PasswordChar = '\0';
             this.txtBuscarP.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscarP.PlaceholderText = "Buscar";
@@ -191,7 +159,7 @@
             this.txtBuscarP.SelectionLength = 0;
             this.txtBuscarP.SelectionStart = 0;
             this.txtBuscarP.ShortcutsEnabled = true;
-            this.txtBuscarP.Size = new System.Drawing.Size(679, 43);
+            this.txtBuscarP.Size = new System.Drawing.Size(310, 36);
             this.txtBuscarP.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscarP.TabIndex = 30;
             this.txtBuscarP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -201,20 +169,6 @@
             this.txtBuscarP.TextPlaceholder = "Buscar";
             this.txtBuscarP.UseSystemPasswordChar = false;
             this.txtBuscarP.WordWrap = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::AgroServicios.Properties.Resources.Lupa_1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(364, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 46);
-            this.button1.TabIndex = 27;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnAgregarProv
             // 
@@ -258,14 +212,14 @@
             this.btnAgregarProv.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgregarProv.IconSize = 25;
             this.btnAgregarProv.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(32)))));
-            this.btnAgregarProv.IdleBorderRadius = 53;
+            this.btnAgregarProv.IdleBorderRadius = 43;
             this.btnAgregarProv.IdleBorderThickness = 1;
             this.btnAgregarProv.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(32)))));
             this.btnAgregarProv.IdleIconLeftImage = null;
             this.btnAgregarProv.IdleIconRightImage = null;
             this.btnAgregarProv.IndicateFocus = true;
-            this.btnAgregarProv.Location = new System.Drawing.Point(37, 10);
-            this.btnAgregarProv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarProv.Location = new System.Drawing.Point(729, 33);
+            this.btnAgregarProv.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarProv.Name = "btnAgregarProv";
             this.btnAgregarProv.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarProv.OnDisabledState.BorderRadius = 1;
@@ -299,7 +253,7 @@
             this.btnAgregarProv.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregarProv.OnPressedState.IconLeftImage = null;
             this.btnAgregarProv.OnPressedState.IconRightImage = null;
-            this.btnAgregarProv.Size = new System.Drawing.Size(201, 55);
+            this.btnAgregarProv.Size = new System.Drawing.Size(151, 45);
             this.btnAgregarProv.TabIndex = 2;
             this.btnAgregarProv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarProv.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -311,6 +265,7 @@
             // 
             this.GriewProveedores.AllowCustomTheming = false;
             this.GriewProveedores.AllowUserToAddRows = false;
+            this.GriewProveedores.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.GriewProveedores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -361,34 +316,81 @@
             this.GriewProveedores.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.GriewProveedores.HeaderBgColor = System.Drawing.Color.Empty;
             this.GriewProveedores.HeaderForeColor = System.Drawing.Color.White;
-            this.GriewProveedores.Location = new System.Drawing.Point(0, 76);
-            this.GriewProveedores.Margin = new System.Windows.Forms.Padding(4);
+            this.GriewProveedores.Location = new System.Drawing.Point(0, 100);
+            this.GriewProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.GriewProveedores.Name = "GriewProveedores";
             this.GriewProveedores.ReadOnly = true;
             this.GriewProveedores.RowHeadersVisible = false;
             this.GriewProveedores.RowHeadersWidth = 51;
             this.GriewProveedores.RowTemplate.Height = 40;
             this.GriewProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GriewProveedores.Size = new System.Drawing.Size(1383, 634);
+            this.GriewProveedores.Size = new System.Drawing.Size(1028, 477);
             this.GriewProveedores.TabIndex = 4;
             this.GriewProveedores.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 20;
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnAgregarProv);
+            this.bunifuGradientPanel1.Controls.Add(this.txtBuscarP);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuLabel2);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1028, 102);
+            this.bunifuGradientPanel1.TabIndex = 41;
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel2.Location = new System.Drawing.Point(27, 34);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(334, 38);
+            this.bunifuLabel2.TabIndex = 0;
+            this.bunifuLabel2.Text = "Tabla de Proveedores";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AgroServicios.Properties.Resources.carro;
+            this.pictureBox1.Location = new System.Drawing.Point(917, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 61);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
             // VistaProveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1383, 710);
+            this.ClientSize = new System.Drawing.Size(1028, 577);
             this.Controls.Add(this.GriewProveedores);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VistaProveedores";
             this.Text = "VistaProveedores";
             this.Load += new System.EventHandler(this.VistaProveedores_Load);
             this.contextGriewProveedores.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GriewProveedores)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -398,11 +400,11 @@
         public System.Windows.Forms.ToolStripMenuItem cmsEliminar;
         public System.Windows.Forms.ToolStripMenuItem cmsActualizar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregarProv;
-        public Bunifu.UI.WinForms.BunifuDataGridView GriewProveedores;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscarP;
+        public Bunifu.UI.WinForms.BunifuDataGridView GriewProveedores;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

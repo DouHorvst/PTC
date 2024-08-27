@@ -143,6 +143,16 @@ namespace AgroServicios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cajitas_logo4 {
+            get {
+                object obj = ResourceManager.GetObject("Cajitas logo4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carro {
             get {
                 object obj = ResourceManager.GetObject("carro", resourceCulture);
@@ -181,25 +191,28 @@ namespace AgroServicios.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
-        ///&lt;html lang=&quot;es&quot;&gt;
+        ///   Busca una cadena traducida similar a &lt;html&gt;
         ///&lt;head&gt;
-        ///    &lt;meta charset=&quot;UTF-8&quot;&gt;
-        ///    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        ///    
         ///    &lt;title&gt;Factura&lt;/title&gt;
         ///    &lt;style&gt;
         ///        body {
-        ///            font-family: Arial, sans-serif;
+        ///            font-family: &apos;Segoe UI&apos;, Tahoma, Geneva, Verdana, sans-serif;
         ///            margin: 0;
         ///            padding: 20px;
+        ///            background-color: #f0f0f0;
         ///        }
+        ///
+        ///        .container {
+        ///            background-color: white;
+        ///            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        ///            border-radius: 5px;
+        ///            overflow: hidden;
+        ///        }
+        ///
         ///        .header {
         ///            background-color: #40E0D0;
-        ///            color: black;
-        ///            padding: 10px;
-        ///            display: flex;
-        ///            justify-content: space-between;
-        ///            a [resto de la cadena truncado]&quot;;.
+        ///    [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string Factura_Plantilla {
             get {

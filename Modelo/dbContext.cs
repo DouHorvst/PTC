@@ -15,15 +15,15 @@ namespace AgroServicios.Modelo
 
             try
             {
-                //string server = "SQL8006.site4now.net";
-                //string database = "db_aab115_siasbase";
-                //string userId = "db_aab115_siasbase_admin";
-                //string Password = "MichI#12@3";
-                //SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; User Id = {userId}; Password = {Password}");
+                string server = "SQL8006.site4now.net";
+                string database = "db_aab115_siasbase";
+                string userId = "db_aab115_siasbase_admin";
+                string Password = "MichI#12@3";
+                SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; User Id = {userId}; Password = {Password}");
 
-                string server = "FELIPE\\SQLEXPRESS";
-                string database = "Base_de_datos_Agro";
-                SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; Integrated Security = true");
+                //string server = "FELIPE\\SQLEXPRESS";
+                //string database = "Base_de_datos_Agro";
+                //SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; Integrated Security = true");
 
                 conexion.Open();
                 return conexion;

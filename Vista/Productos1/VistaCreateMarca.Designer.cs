@@ -34,71 +34,69 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbCrearNuevaMarca = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtNombreMarca = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnIngresarMarca = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.GriewViewMarcas = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.ContextMenuMarcas = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmsElimarProducto = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEditarMarca = new System.Windows.Forms.ToolStripMenuItem();
-            this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GriewViewMarcas)).BeginInit();
+            this.bunifuGradientPanel2 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.txtNombreMarca = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.GriewViewMarcas = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbCrearNuevaMarca = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnIngresarMarca = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.ContextMenuMarcas.SuspendLayout();
+            this.bunifuGradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GriewViewMarcas)).BeginInit();
+            this.bunifuPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuGradientPanel1
+            // ContextMenuMarcas
             // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 20;
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.lbCrearNuevaMarca);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Azure;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(797, 77);
-            this.bunifuGradientPanel1.TabIndex = 0;
-            this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
+            this.ContextMenuMarcas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsElimarProducto,
+            this.cmsEditarMarca});
+            this.ContextMenuMarcas.Name = "ContextMenuProductos";
+            this.ContextMenuMarcas.Size = new System.Drawing.Size(138, 48);
             // 
-            // pictureBox1
+            // cmsElimarProducto
             // 
-            this.pictureBox1.Image = global::AgroServicios.Properties.Resources.Imagen_de_WhatsApp_2024_07_08_a_las_17_27_06_487df51c_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(506, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.cmsElimarProducto.Image = global::AgroServicios.Properties.Resources.borrar;
+            this.cmsElimarProducto.Name = "cmsElimarProducto";
+            this.cmsElimarProducto.Size = new System.Drawing.Size(137, 22);
+            this.cmsElimarProducto.Text = "Eliminar";
             // 
-            // lbCrearNuevaMarca
+            // cmsEditarMarca
             // 
-            this.lbCrearNuevaMarca.AllowParentOverrides = false;
-            this.lbCrearNuevaMarca.AutoEllipsis = false;
-            this.lbCrearNuevaMarca.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbCrearNuevaMarca.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbCrearNuevaMarca.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lbCrearNuevaMarca.Location = new System.Drawing.Point(214, 20);
-            this.lbCrearNuevaMarca.Name = "lbCrearNuevaMarca";
-            this.lbCrearNuevaMarca.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbCrearNuevaMarca.Size = new System.Drawing.Size(279, 36);
-            this.lbCrearNuevaMarca.TabIndex = 0;
-            this.lbCrearNuevaMarca.Text = "Crear Nueva Marca";
-            this.lbCrearNuevaMarca.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbCrearNuevaMarca.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.cmsEditarMarca.Image = global::AgroServicios.Properties.Resources.actualizar;
+            this.cmsEditarMarca.Name = "cmsEditarMarca";
+            this.cmsEditarMarca.Size = new System.Drawing.Size(137, 22);
+            this.cmsEditarMarca.Text = "Editar Datos";
+            // 
+            // bunifuGradientPanel2
+            // 
+            this.bunifuGradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
+            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.BorderRadius = 1;
+            this.bunifuGradientPanel2.Controls.Add(this.bunifuPanel1);
+            this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(32)))));
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(19)))));
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(32)))));
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+            this.bunifuGradientPanel2.Quality = 10;
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(618, 261);
+            this.bunifuGradientPanel2.TabIndex = 3;
             // 
             // txtNombreMarca
             // 
@@ -129,7 +127,7 @@
             this.txtNombreMarca.IconRight = null;
             this.txtNombreMarca.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreMarca.Lines = new string[0];
-            this.txtNombreMarca.Location = new System.Drawing.Point(102, 103);
+            this.txtNombreMarca.Location = new System.Drawing.Point(286, 82);
             this.txtNombreMarca.MaxLength = 32767;
             this.txtNombreMarca.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombreMarca.Modified = false;
@@ -165,7 +163,7 @@
             this.txtNombreMarca.SelectionLength = 0;
             this.txtNombreMarca.SelectionStart = 0;
             this.txtNombreMarca.ShortcutsEnabled = true;
-            this.txtNombreMarca.Size = new System.Drawing.Size(386, 47);
+            this.txtNombreMarca.Size = new System.Drawing.Size(282, 47);
             this.txtNombreMarca.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNombreMarca.TabIndex = 1;
             this.txtNombreMarca.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -175,97 +173,6 @@
             this.txtNombreMarca.TextPlaceholder = "Nombre de la Marca";
             this.txtNombreMarca.UseSystemPasswordChar = false;
             this.txtNombreMarca.WordWrap = true;
-            // 
-            // btnIngresarMarca
-            // 
-            this.btnIngresarMarca.AllowAnimations = true;
-            this.btnIngresarMarca.AllowMouseEffects = true;
-            this.btnIngresarMarca.AllowToggling = false;
-            this.btnIngresarMarca.AnimationSpeed = 200;
-            this.btnIngresarMarca.AutoGenerateColors = false;
-            this.btnIngresarMarca.AutoRoundBorders = false;
-            this.btnIngresarMarca.AutoSizeLeftIcon = true;
-            this.btnIngresarMarca.AutoSizeRightIcon = true;
-            this.btnIngresarMarca.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresarMarca.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.btnIngresarMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresarMarca.BackgroundImage")));
-            this.btnIngresarMarca.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnIngresarMarca.ButtonText = "Ingresar";
-            this.btnIngresarMarca.ButtonTextMarginLeft = 0;
-            this.btnIngresarMarca.ColorContrastOnClick = 45;
-            this.btnIngresarMarca.ColorContrastOnHover = 45;
-            this.btnIngresarMarca.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnIngresarMarca.CustomizableEdges = borderEdges1;
-            this.btnIngresarMarca.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnIngresarMarca.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnIngresarMarca.DisabledFillColor = System.Drawing.Color.Empty;
-            this.btnIngresarMarca.DisabledForecolor = System.Drawing.Color.Empty;
-            this.btnIngresarMarca.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnIngresarMarca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnIngresarMarca.IconLeft = null;
-            this.btnIngresarMarca.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngresarMarca.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnIngresarMarca.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnIngresarMarca.IconMarginLeft = 11;
-            this.btnIngresarMarca.IconPadding = 10;
-            this.btnIngresarMarca.IconRight = null;
-            this.btnIngresarMarca.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIngresarMarca.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnIngresarMarca.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnIngresarMarca.IconSize = 25;
-            this.btnIngresarMarca.IdleBorderColor = System.Drawing.Color.Empty;
-            this.btnIngresarMarca.IdleBorderRadius = 0;
-            this.btnIngresarMarca.IdleBorderThickness = 0;
-            this.btnIngresarMarca.IdleFillColor = System.Drawing.Color.Empty;
-            this.btnIngresarMarca.IdleIconLeftImage = null;
-            this.btnIngresarMarca.IdleIconRightImage = null;
-            this.btnIngresarMarca.IndicateFocus = false;
-            this.btnIngresarMarca.Location = new System.Drawing.Point(210, 170);
-            this.btnIngresarMarca.Name = "btnIngresarMarca";
-            this.btnIngresarMarca.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnIngresarMarca.OnDisabledState.BorderRadius = 20;
-            this.btnIngresarMarca.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnIngresarMarca.OnDisabledState.BorderThickness = 1;
-            this.btnIngresarMarca.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnIngresarMarca.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnIngresarMarca.OnDisabledState.IconLeftImage = null;
-            this.btnIngresarMarca.OnDisabledState.IconRightImage = null;
-            this.btnIngresarMarca.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnIngresarMarca.onHoverState.BorderRadius = 20;
-            this.btnIngresarMarca.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnIngresarMarca.onHoverState.BorderThickness = 1;
-            this.btnIngresarMarca.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnIngresarMarca.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnIngresarMarca.onHoverState.IconLeftImage = null;
-            this.btnIngresarMarca.onHoverState.IconRightImage = null;
-            this.btnIngresarMarca.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnIngresarMarca.OnIdleState.BorderRadius = 20;
-            this.btnIngresarMarca.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnIngresarMarca.OnIdleState.BorderThickness = 1;
-            this.btnIngresarMarca.OnIdleState.FillColor = System.Drawing.Color.LimeGreen;
-            this.btnIngresarMarca.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnIngresarMarca.OnIdleState.IconLeftImage = null;
-            this.btnIngresarMarca.OnIdleState.IconRightImage = null;
-            this.btnIngresarMarca.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnIngresarMarca.OnPressedState.BorderRadius = 20;
-            this.btnIngresarMarca.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnIngresarMarca.OnPressedState.BorderThickness = 1;
-            this.btnIngresarMarca.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnIngresarMarca.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnIngresarMarca.OnPressedState.IconLeftImage = null;
-            this.btnIngresarMarca.OnPressedState.IconRightImage = null;
-            this.btnIngresarMarca.Size = new System.Drawing.Size(150, 39);
-            this.btnIngresarMarca.TabIndex = 2;
-            this.btnIngresarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnIngresarMarca.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnIngresarMarca.TextMarginLeft = 0;
-            this.btnIngresarMarca.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnIngresarMarca.UseDefaultRadiusAndThickness = true;
             // 
             // GriewViewMarcas
             // 
@@ -319,8 +226,9 @@
             this.GriewViewMarcas.EnableHeadersVisualStyles = false;
             this.GriewViewMarcas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.GriewViewMarcas.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.GriewViewMarcas.HeaderBgColor = System.Drawing.Color.Empty;
             this.GriewViewMarcas.HeaderForeColor = System.Drawing.Color.White;
-            this.GriewViewMarcas.Location = new System.Drawing.Point(532, 107);
+            this.GriewViewMarcas.Location = new System.Drawing.Point(17, 109);
             this.GriewViewMarcas.Margin = new System.Windows.Forms.Padding(2);
             this.GriewViewMarcas.Name = "GriewViewMarcas";
             this.GriewViewMarcas.ReadOnly = true;
@@ -328,9 +236,55 @@
             this.GriewViewMarcas.RowHeadersWidth = 51;
             this.GriewViewMarcas.RowTemplate.Height = 40;
             this.GriewViewMarcas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GriewViewMarcas.Size = new System.Drawing.Size(242, 128);
-            this.GriewViewMarcas.TabIndex = 3;
+            this.GriewViewMarcas.Size = new System.Drawing.Size(265, 115);
+            this.GriewViewMarcas.TabIndex = 0;
             this.GriewViewMarcas.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Black;
+            this.bunifuPanel2.BorderRadius = 20;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.lbCrearNuevaMarca);
+            this.bunifuPanel2.Controls.Add(this.pictureBox1);
+            this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(594, 65);
+            this.bunifuPanel2.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AgroServicios.Properties.Resources.Imagen_de_WhatsApp_2024_07_08_a_las_17_27_06_487df51c_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(419, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Black;
+            this.bunifuPanel1.BorderRadius = 20;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.bunifuPanel2);
+            this.bunifuPanel1.Controls.Add(this.GriewViewMarcas);
+            this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
+            this.bunifuPanel1.Controls.Add(this.txtNombreMarca);
+            this.bunifuPanel1.Controls.Add(this.btnIngresarMarca);
+            this.bunifuPanel1.Location = new System.Drawing.Point(12, 9);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(594, 242);
+            this.bunifuPanel1.TabIndex = 3;
             // 
             // bunifuLabel1
             // 
@@ -339,7 +293,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(565, 77);
+            this.bunifuLabel1.Location = new System.Drawing.Point(60, 79);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(171, 25);
@@ -348,64 +302,148 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // ContextMenuMarcas
+            // lbCrearNuevaMarca
             // 
-            this.ContextMenuMarcas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsElimarProducto,
-            this.cmsEditarMarca});
-            this.ContextMenuMarcas.Name = "ContextMenuProductos";
-            this.ContextMenuMarcas.Size = new System.Drawing.Size(181, 70);
+            this.lbCrearNuevaMarca.AllowParentOverrides = false;
+            this.lbCrearNuevaMarca.AutoEllipsis = false;
+            this.lbCrearNuevaMarca.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbCrearNuevaMarca.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbCrearNuevaMarca.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold);
+            this.lbCrearNuevaMarca.Location = new System.Drawing.Point(134, 13);
+            this.lbCrearNuevaMarca.Name = "lbCrearNuevaMarca";
+            this.lbCrearNuevaMarca.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbCrearNuevaMarca.Size = new System.Drawing.Size(279, 36);
+            this.lbCrearNuevaMarca.TabIndex = 0;
+            this.lbCrearNuevaMarca.Text = "Crear Nueva Marca";
+            this.lbCrearNuevaMarca.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbCrearNuevaMarca.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // cmsElimarProducto
+            // btnIngresarMarca
             // 
-            this.cmsElimarProducto.Image = global::AgroServicios.Properties.Resources.borrar;
-            this.cmsElimarProducto.Name = "cmsElimarProducto";
-            this.cmsElimarProducto.Size = new System.Drawing.Size(180, 22);
-            this.cmsElimarProducto.Text = "Eliminar";
-            // 
-            // cmsEditarMarca
-            // 
-            this.cmsEditarMarca.Image = global::AgroServicios.Properties.Resources.actualizar;
-            this.cmsEditarMarca.Name = "cmsEditarMarca";
-            this.cmsEditarMarca.Size = new System.Drawing.Size(180, 22);
-            this.cmsEditarMarca.Text = "Editar Datos";
+            this.btnIngresarMarca.AllowAnimations = true;
+            this.btnIngresarMarca.AllowMouseEffects = true;
+            this.btnIngresarMarca.AllowToggling = false;
+            this.btnIngresarMarca.AnimationSpeed = 200;
+            this.btnIngresarMarca.AutoGenerateColors = false;
+            this.btnIngresarMarca.AutoRoundBorders = false;
+            this.btnIngresarMarca.AutoSizeLeftIcon = true;
+            this.btnIngresarMarca.AutoSizeRightIcon = true;
+            this.btnIngresarMarca.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarMarca.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnIngresarMarca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresarMarca.BackgroundImage")));
+            this.btnIngresarMarca.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnIngresarMarca.ButtonText = "Ingresar";
+            this.btnIngresarMarca.ButtonTextMarginLeft = 0;
+            this.btnIngresarMarca.ColorContrastOnClick = 45;
+            this.btnIngresarMarca.ColorContrastOnHover = 45;
+            this.btnIngresarMarca.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnIngresarMarca.CustomizableEdges = borderEdges1;
+            this.btnIngresarMarca.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnIngresarMarca.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnIngresarMarca.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnIngresarMarca.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnIngresarMarca.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnIngresarMarca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarMarca.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarMarca.IconLeft = null;
+            this.btnIngresarMarca.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIngresarMarca.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnIngresarMarca.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnIngresarMarca.IconMarginLeft = 11;
+            this.btnIngresarMarca.IconPadding = 10;
+            this.btnIngresarMarca.IconRight = null;
+            this.btnIngresarMarca.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIngresarMarca.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnIngresarMarca.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnIngresarMarca.IconSize = 25;
+            this.btnIngresarMarca.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnIngresarMarca.IdleBorderRadius = 0;
+            this.btnIngresarMarca.IdleBorderThickness = 0;
+            this.btnIngresarMarca.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnIngresarMarca.IdleIconLeftImage = null;
+            this.btnIngresarMarca.IdleIconRightImage = null;
+            this.btnIngresarMarca.IndicateFocus = false;
+            this.btnIngresarMarca.Location = new System.Drawing.Point(349, 135);
+            this.btnIngresarMarca.Name = "btnIngresarMarca";
+            this.btnIngresarMarca.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnIngresarMarca.OnDisabledState.BorderRadius = 20;
+            this.btnIngresarMarca.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnIngresarMarca.OnDisabledState.BorderThickness = 1;
+            this.btnIngresarMarca.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnIngresarMarca.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnIngresarMarca.OnDisabledState.IconLeftImage = null;
+            this.btnIngresarMarca.OnDisabledState.IconRightImage = null;
+            this.btnIngresarMarca.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnIngresarMarca.onHoverState.BorderRadius = 20;
+            this.btnIngresarMarca.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnIngresarMarca.onHoverState.BorderThickness = 1;
+            this.btnIngresarMarca.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnIngresarMarca.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarMarca.onHoverState.IconLeftImage = null;
+            this.btnIngresarMarca.onHoverState.IconRightImage = null;
+            this.btnIngresarMarca.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnIngresarMarca.OnIdleState.BorderRadius = 20;
+            this.btnIngresarMarca.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnIngresarMarca.OnIdleState.BorderThickness = 1;
+            this.btnIngresarMarca.OnIdleState.FillColor = System.Drawing.Color.LimeGreen;
+            this.btnIngresarMarca.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarMarca.OnIdleState.IconLeftImage = null;
+            this.btnIngresarMarca.OnIdleState.IconRightImage = null;
+            this.btnIngresarMarca.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnIngresarMarca.OnPressedState.BorderRadius = 20;
+            this.btnIngresarMarca.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnIngresarMarca.OnPressedState.BorderThickness = 1;
+            this.btnIngresarMarca.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnIngresarMarca.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarMarca.OnPressedState.IconLeftImage = null;
+            this.btnIngresarMarca.OnPressedState.IconRightImage = null;
+            this.btnIngresarMarca.Size = new System.Drawing.Size(150, 39);
+            this.btnIngresarMarca.TabIndex = 2;
+            this.btnIngresarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnIngresarMarca.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnIngresarMarca.TextMarginLeft = 0;
+            this.btnIngresarMarca.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnIngresarMarca.UseDefaultRadiusAndThickness = true;
             // 
             // VistaCreateMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.ClientSize = new System.Drawing.Size(797, 246);
-            this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.GriewViewMarcas);
-            this.Controls.Add(this.btnIngresarMarca);
-            this.Controls.Add(this.txtNombreMarca);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.ClientSize = new System.Drawing.Size(618, 261);
+            this.Controls.Add(this.bunifuGradientPanel2);
             this.Name = "VistaCreateMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaCreateMarca";
             this.Load += new System.EventHandler(this.VistaCreateMarca_Load);
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GriewViewMarcas)).EndInit();
             this.ContextMenuMarcas.ResumeLayout(false);
+            this.bunifuGradientPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GriewViewMarcas)).EndInit();
+            this.bunifuPanel2.ResumeLayout(false);
+            this.bunifuPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuLabel lbCrearNuevaMarca;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        public Bunifu.UI.WinForms.BunifuTextBox txtNombreMarca;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnIngresarMarca;
-        public Bunifu.UI.WinForms.BunifuDataGridView GriewViewMarcas;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         public System.Windows.Forms.ContextMenuStrip ContextMenuMarcas;
         public System.Windows.Forms.ToolStripMenuItem cmsElimarProducto;
         public System.Windows.Forms.ToolStripMenuItem cmsEditarMarca;
+        public Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private Bunifu.UI.WinForms.BunifuLabel lbCrearNuevaMarca;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public Bunifu.UI.WinForms.BunifuDataGridView GriewViewMarcas;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNombreMarca;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnIngresarMarca;
     }
 }

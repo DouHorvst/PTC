@@ -43,7 +43,7 @@ namespace AgroServicios.Vista.Estadisticas
                 {
                     GriewProveedores.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
                     GriewProveedores.BackgroundColor = Color.FromArgb(50, 56, 62);
-                    tableLayoutPanel1.BackColor = Color.FromArgb(118, 88, 152);
+                    bunifuGradientPanel1.BackColor = Color.FromArgb(118, 88, 152);
                 }
             }
         }

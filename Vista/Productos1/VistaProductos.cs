@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AgroServicios.Controlador;
 using AgroServicios.Controlador.Productos1;
+using AgroServicios.Modelo.DTO;
 using AgroServicios.Vista.Productos1;
+using Bunifu.UI.WinForms;
 
 namespace AgroServicios.Vista.Productos1 
 {
@@ -31,9 +33,14 @@ namespace AgroServicios.Vista.Productos1
                 bunifuLabel1.ForeColor = Color.White;
                 GriewViewProductos.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
                 GriewViewProductos.BackgroundColor = Color.FromArgb(50, 56, 62);
-                btnAgregarProducto.IdleFillColor = Color.DarkViolet;
+                bunifuGradientPanel1.GradientBottomLeft = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel1.GradientTopRight = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel1.GradientBottomRight = Color.FromArgb(34, 36, 49);
+                bunifuGradientPanel1.GradientTopLeft = Color.FromArgb(34, 36, 49);
+                btnAgregarMarca.IdleFillColor = Color.FromArgb(118, 88, 152);
+                btnAgregarProducto.IdleFillColor = Color.FromArgb(230, 119, 11);
+                btnAgregarMarca.ForeColor = Color.White;
                 btnAgregarProducto.ForeColor = Color.White;
-                tableLayoutPanel1.BackColor = Color.FromArgb(118, 88, 152);
             }
 
             if (ControladorIdioma.idioma == 1)

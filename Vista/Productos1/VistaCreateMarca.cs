@@ -32,12 +32,12 @@ namespace AgroServicios.Vista.Productos1
                 this.BackColor = Color.Black;
                 GriewViewMarcas.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
                 GriewViewMarcas.BackgroundColor = Color.FromArgb(50, 56, 62);
-                bunifuGradientPanel1.GradientBottomLeft = Color.FromArgb(118, 88, 152);
-                bunifuGradientPanel1.GradientTopRight = Color.FromArgb(118, 88, 152);
-                bunifuGradientPanel1.GradientBottomRight = Color.FromArgb(34, 36, 49);
-                bunifuGradientPanel1.GradientTopLeft = Color.FromArgb(34, 36, 49);
+                bunifuGradientPanel2.GradientBottomLeft = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel2.GradientTopRight = Color.FromArgb(118, 88, 152);
+                bunifuGradientPanel2.GradientBottomRight = Color.FromArgb(34, 36, 49);
+                bunifuGradientPanel2.GradientTopLeft = Color.FromArgb(34, 36, 49);
                 btnIngresarMarca.IdleFillColor = Color.FromArgb(118, 88, 152);
-                btnIngresarMarca.ForeColor = Color.White;
+                btnIngresarMarca.BackColor = Color.DarkViolet;
             }
 
             if (ControladorIdioma.idioma == 1)

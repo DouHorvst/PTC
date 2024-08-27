@@ -29,6 +29,10 @@ namespace AgroServicios.Vista.Productos1
                 bunifuGradientPanel2.GradientTopRight = Color.FromArgb(118, 88, 152);
                 bunifuGradientPanel2.GradientBottomRight = Color.FromArgb(34, 36, 49);
                 bunifuGradientPanel2.GradientTopLeft = Color.FromArgb(34, 36, 49);
+                bunifuPanel1.BackgroundColor = Color.FromArgb(50, 56, 62);
+                btnCrearProducto.BackColor = Color.DarkViolet;
+                btnImagenProducto.BackColor = Color.FromArgb(230, 119, 11);
+                btnImagenProducto.IdleFillColor = Color.FromArgb(230, 119, 11);
             }
 
             if (ControladorIdioma.idioma == 1)
@@ -48,6 +52,16 @@ namespace AgroServicios.Vista.Productos1
         private void ptbImgProducto_Click(object sender, EventArgs e)
         {
              
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

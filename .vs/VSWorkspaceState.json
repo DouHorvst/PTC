@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controlador",
+    "\\Controlador\\CuentasContralador",
+    "\\Controlador\\Productos1",
+    "\\Modelo",
+    "\\Modelo\\DAO",
+    "\\Modelo\\DTO",
+    "\\Properties",
+    "\\Vista",
+    "\\Vista\\Cuentas"
+  ],
+  "SelectedNode": "\\Modelo\\dbContext.cs",
+  "PreviewInSolutionExplorer": false
+}
